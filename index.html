@@ -40,7 +40,11 @@
    text-indent: 2ch;
  }
  li:before {
-   content: '• ';
+   <!-- content: "• "; -->
+ }
+ li {
+   text-indent: -2ch;
+     padding-left: 2ch;
  }
   body {
     padding-left: 2ch;
@@ -50,8 +54,19 @@
     list-style: none;
   }
   img {
+    display: block;
+    max-height: 9rem;
     max-width: 100%;
     height: auto;
+  }
+  .image-link {
+    display: block;
+    height: 9rem;
+    width: calc(100vw - 4ch);
+    margin-left: -2ch;
+    background-size: contain;
+    background-position: left top;
+    background-color: white;
   }
   a {
     color: black;
@@ -67,11 +82,28 @@
       <p>Experiments in creative constraints.</p>
       <h2>Contents</h2>
       <ul>
-        <li>2019.10.29: <a href="https://slide.constraint.systems">Slide</a> - divide and slide-stretch an image using keyboard controls.</li>
-        <li>2019.10.08: <a href="https://freeconfig.constraint.systems">Freeconfig</a> - push around image pixels in blocks.</li>
-        <li>2019.10.04: <a href="https://moire.constraint.systems">Moire</a> - generate angular skyscapes using Asteroids-like ship controls.</li>
-        <li>2019.09.25: <a href="https://hex.constraint.systems">Hex</a> - a keyboard-driven, grid-based drawing tool.</li>
-        <li>2019.09.19: <a href="https://etch.constraint.systems">Etch</a> - a keyboard-based pixel drawing tool.</li>
+        <li>2019.10.29<br />
+          <img src="https://slide.constraint.systems/slide.gif" />
+          <a href="https://slide.constraint.systems">Slide</a>
+ - divide and slide-stretch an image using keyboard controls.
+        </li>
+        <li>2019.10.08<br />
+          <img src="https://freeconfig.constraint.systems/static/freeconfig.gif" />
+          <a href="https://freeconfig.constraint.systems">Freeconfig</a>
+ - push around image pixels in blocks.</li>
+        <li>2019.10.04<br />
+          <img src="https://moire.constraint.systems/static/moire.gif" />
+          <a href="https://moire.constraint.systems">Moire</a>
+- generate angular skyscapes using Asteroids-like ship controls.
+        </li>
+        <li>2019.09.25<br />
+          <img src="https://hex.constraint.systems/static/share.gif" />
+          <a href="https://hex.constraint.systems">Hex</a> - a keyboard-driven, grid-based drawing tool.
+        </li>
+        <li>2019.09.19<br />
+          <img src="https://etch.constraint.systems/static/share.gif" />
+          <a href="https://etch.constraint.systems">Etch</a> - a keyboard-based pixel drawing tool.
+        </li>
       </ul>
       <h2>Colophon</h2>
       <p>Follow our releases on <a href="https://twitter.com/constraint_sys">Twitter</a>.
