@@ -54,20 +54,20 @@
   }
   img {
     display: block;
-    max-height: 9rem;
+    max-height: 10.5rem;
     max-width: 100%;
     height: auto;
   }
-  .image-link {
-    display: block;
-    height: 9rem;
-    width: calc(100vw - 4ch);
-    margin-left: -2ch;
-    background-size: contain;
-    background-position: left top;
-    background-color: white;
+  .flex {
+    display: flex;
   }
-  a {
+  .image-link {
+    border: solid 1px black;
+  }
+  .image-link img {
+    max-height: calc(10.5rem - 2px);
+  }
+ a {
     color: black;
   }
   .wrapper {
@@ -82,25 +82,35 @@
       <h2>Contents</h2>
       <ul>
         <li>2019.10.29<br />
-          <img src="https://slide.constraint.systems/slide.gif" />
+          <div class="flex">
+            <a class="image-link" href="https://slide.constraint.systems"><img src="https://slide.constraint.systems/slide.gif" /></a>
+          </div>
           <a href="https://slide.constraint.systems">Slide</a>
  - divide and slide-stretch an image using keyboard controls.
         </li>
         <li>2019.10.08<br />
-          <img src="https://freeconfig.constraint.systems/static/freeconfig.gif" />
+          <div class="flex">
+            <a class="image-link" href="https://freeconfig.constraint.systems"><img src="https://freeconfig.constraint.systems/static/freeconfig.gif" /></a>
+          </div>
           <a href="https://freeconfig.constraint.systems">Freeconfig</a>
  - push around image pixels in blocks.</li>
         <li>2019.10.04<br />
-          <img src="https://moire.constraint.systems/static/moire.gif" />
+          <div class="flex">
+            <a class="image-link" href="https://moire.constraint.systems"><img src="https://moire.constraint.systems/static/moire.gif" /></a>
+          </div>
           <a href="https://moire.constraint.systems">Moire</a>
 - generate angular skyscapes using Asteroids-like ship controls.
         </li>
         <li>2019.09.25<br />
-          <img src="https://hex.constraint.systems/static/share.gif" />
+          <div class="flex">
+            <a class="image-link" href="https://hex.constraint.systems"><img src="https://hex.constraint.systems/static/share.gif" /></a>
+          </div>
           <a href="https://hex.constraint.systems">Hex</a> - a keyboard-driven, grid-based drawing tool.
         </li>
         <li>2019.09.19<br />
-          <img src="https://etch.constraint.systems/static/share.gif" />
+          <div class="flex">
+            <a class="image-link" href="https://etch.constraint.systems"><img src="https://etch.constraint.systems/static/share.gif" /></a>
+          </div>
           <a href="https://etch.constraint.systems">Etch</a> - a keyboard-based pixel drawing tool.
         </li>
       </ul>
