@@ -39,11 +39,8 @@
  p {
    text-indent: 2ch;
  }
- li:before {
-   <!-- content: "• "; -->
- }
- li {
-   text-indent: 2ch;
+li {
+  text-indent: 2ch;
  }
   body {
     padding-left: 2ch;
@@ -73,6 +70,17 @@
   .wrapper {
     max-width: 80ch;
   }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 40ch);
+    grid-column-gap: 3ch;
+    grid-row-gap: 1.5rem; 
+  }
+  @media (max-width: 44ch) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
   </head>
   <body>
@@ -80,7 +88,8 @@
       <h1>Constraint Systems</h1>
       <p>Experiments in creative constraints.</p>
       <h2>Contents</h2>
-      <ul>
+    </div>
+    <ul class="grid" style="margin-top: 1.5rem;">
         <li>2019.10.29<br />
           <div class="flex">
             <a class="image-link" href="https://slide.constraint.systems"><img src="https://slide.constraint.systems/slide.gif" /></a>
@@ -114,9 +123,11 @@
           <a href="https://etch.constraint.systems">Etch</a> - a keyboard-based pixel drawing tool.
         </li>
       </ul>
-      <h2>Colophon</h2>
-      <p>Follow our releases on <a href="https://twitter.com/constraint_sys">Twitter</a>.
-      <p><a href="https://github.com/constraint-systems/index">View source</a></p>
+      <div class="wrapper">
+        <h2>Colophon</h2>
+        <p>Follow our releases on <a href="https://twitter.com/constraint_sys">Twitter</a>.
+        <p><a href="https://github.com/constraint-systems/index">View source</a></p>
+      </div>
     </div>
   </body>
 </html>
