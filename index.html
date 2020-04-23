@@ -1,7 +1,7 @@
-<!doctype html>
-<html lang=en>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset=utf-8>
+    <meta charset="utf-8" />
     <title>Constraint Systems</title>
     <meta name="theme-color" content="#efefef" />
     <meta name="description" content="An interface research lab." />
@@ -9,79 +9,91 @@
     <meta
       name="viewport"
       content="width=device-width,initial-scale=1,shrink-to-fit=no"
-      />
-<style>
-  @font-face {
-    font-family: "custom";
-    src: url('/static/fonts/IBMPlexMono-Regular.woff2') format('woff2'),
-      url('/static/fonts/IBMPlexMono-Regular.woff') format('woff');
-  }
-  html {
-    box-sizing: border-box;
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: custom;
-    background: #efefef;
-  }
-   *, *:before, *:after {
-    box-sizing: inherit;
-  }
-   body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-    font-size: inherit;
-    line-height: inherit;
-  }
- h2 {
-   margin-top: 1.5rem;
- }
- p {
-   text-indent: 2ch;
- }
-li {
-  text-indent: 2ch;
- }
-  body {
-    padding-left: 2ch;
-    padding-right: 2ch;
-  }
-  ol, ul {
-    list-style: none;
-  }
-  img {
-    display: block;
-    max-height: 10.5rem;
-    max-width: 100%;
-    height: auto;
-  }
-  .flex {
-    display: flex;
-  }
-  .image-link {
-    border: solid 1px black;
-  }
-  .image-link img {
-    max-height: calc(10.5rem - 2px);
-  }
- a {
-    color: black;
-  }
-  .wrapper {
-    max-width: 80ch;
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 40ch);
-    grid-column-gap: 3ch;
-    grid-row-gap: 1.5rem; 
-  }
-  @media (max-width: 44ch) {
-    .grid {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
+    />
+    <style>
+      @font-face {
+        font-family: 'custom';
+        src: url('/static/fonts/IBMPlexMono-Regular.woff2') format('woff2'),
+          url('/static/fonts/IBMPlexMono-Regular.woff') format('woff');
+      }
+      html {
+        box-sizing: border-box;
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: custom;
+        background: #efefef;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      ol,
+      ul {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+        font-size: inherit;
+        line-height: inherit;
+      }
+      h2 {
+        margin-top: 1.5rem;
+      }
+      p {
+        text-indent: 2ch;
+      }
+      li {
+        text-indent: 2ch;
+      }
+      body {
+        padding-left: 2ch;
+        padding-right: 2ch;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      img {
+        display: block;
+        max-height: 10.5rem;
+        max-width: 100%;
+        height: auto;
+      }
+      .flex {
+        display: flex;
+      }
+      .image-link {
+        border: solid 1px black;
+      }
+      .image-link img {
+        max-height: calc(10.5rem - 2px);
+      }
+      a {
+        color: black;
+      }
+      .wrapper {
+        max-width: 80ch;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 40ch);
+        grid-column-gap: 3ch;
+        grid-row-gap: 1.5rem;
+      }
+      @media (max-width: 44ch) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -90,85 +102,148 @@ li {
       <h2>Experiments</h2>
     </div>
     <ul class="grid" style="margin-top: 1.5rem;">
-      <li>2020.03.21<br />
+      <li>
+        2020.04.23<br />
         <div class="flex">
-          <a class="image-link" href="https://collapse.constraint.systems"><img src="https://collapse.constraint.systems/collapse.gif" /></a>
+          <a class="image-link" href="https://stamp.constraint.systems"
+            ><img src="https://stamp.constraint.systems/stamp.gif"
+          /></a>
         </div>
-        <a href="https://collapse.constraint.systems">Collapse</a> - collapse an image into itself using ranked superpixels.
+        <a href="https://stamp.constraint.systems">Stamp</a> - image-paint from
+        a source image using keyboard controls.
       </li>
-      <li>2020.03.16<br />
+      <li>
+        2020.03.21<br />
         <div class="flex">
-          <a class="image-link" href="https://res.constraint.systems"><img src="https://res.constraint.systems/res.gif" /></a>
+          <a class="image-link" href="https://collapse.constraint.systems"
+            ><img src="https://collapse.constraint.systems/collapse.gif"
+          /></a>
         </div>
-        <a href="https://res.constraint.systems">Res</a> - selectively pixelate an image using a compression algorithm.
+        <a href="https://collapse.constraint.systems">Collapse</a> - collapse an
+        image into itself using ranked superpixels.
       </li>
-      <li>2020.03.08<br />
+      <li>
+        2020.03.16<br />
         <div class="flex">
-          <a class="image-link" href="https://rgb.constraint.systems"><img src="https://rgb.constraint.systems/rgb.gif" /></a>
+          <a class="image-link" href="https://res.constraint.systems"
+            ><img src="https://res.constraint.systems/res.gif"
+          /></a>
         </div>
-        <a href="https://rgb.constraint.systems">Rgb</a> - pixel-paint using keyboard controls.
+        <a href="https://res.constraint.systems">Res</a> - selectively pixelate
+        an image using a compression algorithm.
       </li>
-      <li>2020.02.23<br />
+      <li>
+        2020.03.08<br />
         <div class="flex">
-          <a class="image-link" href="https://face.constraint.systems"><img src="https://face.constraint.systems/facelong.gif" /></a>
+          <a class="image-link" href="https://rgb.constraint.systems"
+            ><img src="https://rgb.constraint.systems/rgb.gif"
+          /></a>
         </div>
-        <a href="https://face.constraint.systems">Face</a> - edit both the text and the font it is rendered in.
+        <a href="https://rgb.constraint.systems">Rgb</a> - pixel-paint using
+        keyboard controls.
       </li>
-      <li>2019.01.08<br />
+      <li>
+        2020.02.23<br />
         <div class="flex">
-          <a class="image-link" href="https://pal.constraint.systems"><img src="https://pal.constraint.systems/pal.gif" /></a>
+          <a class="image-link" href="https://face.constraint.systems"
+            ><img src="https://face.constraint.systems/facelong.gif"
+          /></a>
         </div>
-        <a href="https://pal.constraint.systems">Pal</a> - apply an eight-color terminal color scheme to an image. Use the keyboard controls to choose a theme, set thresholds, and cycle hues.
+        <a href="https://face.constraint.systems">Face</a> - edit both the text
+        and the font it is rendered in.
       </li>
-      <li>2019.12.28<br />
+      <li>
+        2019.01.08<br />
         <div class="flex">
-          <a class="image-link" href="https://bix.constraint.systems"><img src="https://bix.constraint.systems/bix.gif" /></a>
+          <a class="image-link" href="https://pal.constraint.systems"
+            ><img src="https://pal.constraint.systems/pal.gif"
+          /></a>
         </div>
-        <a href="https://bix.constraint.systems">Bix</a> - draw on binary to glitch text.
+        <a href="https://pal.constraint.systems">Pal</a> - apply an eight-color
+        terminal color scheme to an image. Use the keyboard controls to choose a
+        theme, set thresholds, and cycle hues.
       </li>
-      <li>2019.11.08<br />
+      <li>
+        2019.12.28<br />
         <div class="flex">
-          <a class="image-link" href="https://diptych.constraint.systems"><img src="https://diptych.constraint.systems/diptych.gif" /></a>
+          <a class="image-link" href="https://bix.constraint.systems"
+            ><img src="https://bix.constraint.systems/bix.gif"
+          /></a>
         </div>
-        <a href="https://diptych.constraint.systems">Diptych</a> - pixel-reflow an image to match the dimensions of your text. Save the result as a diptych.
+        <a href="https://bix.constraint.systems">Bix</a> - draw on binary to
+        glitch text.
       </li>
-        <li>2019.10.29<br />
-          <div class="flex">
-            <a class="image-link" href="https://slide.constraint.systems"><img src="https://slide.constraint.systems/slide.gif" /></a>
-          </div>
-          <a href="https://slide.constraint.systems">Slide</a>
- - divide and slide-stretch an image using keyboard controls.
-        </li>
-        <li>2019.10.08<br />
-          <div class="flex">
-            <a class="image-link" href="https://freeconfig.constraint.systems"><img src="https://freeconfig.constraint.systems/static/freeconfig.gif" /></a>
-          </div>
-          <a href="https://freeconfig.constraint.systems">Freeconfig</a>
- - push around image pixels in blocks.</li>
-        <li>2019.10.04<br />
-          <div class="flex">
-            <a class="image-link" href="https://moire.constraint.systems"><img src="https://moire.constraint.systems/static/moire.gif" /></a>
-          </div>
-          <a href="https://moire.constraint.systems">Moire</a>
-- generate angular skyscapes using Asteroids-like ship controls.
-        </li>
-        <li>2019.09.25<br />
-          <div class="flex">
-            <a class="image-link" href="https://hex.constraint.systems"><img src="https://hex.constraint.systems/static/share.gif" /></a>
-          </div>
-          <a href="https://hex.constraint.systems">Hex</a> - a keyboard-driven, grid-based drawing tool.
-        </li>
-        <li>2019.09.19<br />
-          <div class="flex">
-            <a class="image-link" href="https://etch.constraint.systems"><img src="https://etch.constraint.systems/static/share.gif" /></a>
-          </div>
-          <a href="https://etch.constraint.systems">Etch</a> - a keyboard-based pixel drawing tool.
-        </li>
-      </ul>
-      <div class="wrapper" style="margin-top: 1.5rem">
-        <p>Follow our releases on <a href="https://twitter.com/constraint_sys">Twitter</a>.
-        <p><a href="https://github.com/constraint-systems/index">View source</a></p>
-      </div>
+      <li>
+        2019.11.08<br />
+        <div class="flex">
+          <a class="image-link" href="https://diptych.constraint.systems"
+            ><img src="https://diptych.constraint.systems/diptych.gif"
+          /></a>
+        </div>
+        <a href="https://diptych.constraint.systems">Diptych</a> - pixel-reflow
+        an image to match the dimensions of your text. Save the result as a
+        diptych.
+      </li>
+      <li>
+        2019.10.29<br />
+        <div class="flex">
+          <a class="image-link" href="https://slide.constraint.systems"
+            ><img src="https://slide.constraint.systems/slide.gif"
+          /></a>
+        </div>
+        <a href="https://slide.constraint.systems">Slide</a>
+        - divide and slide-stretch an image using keyboard controls.
+      </li>
+      <li>
+        2019.10.08<br />
+        <div class="flex">
+          <a class="image-link" href="https://freeconfig.constraint.systems"
+            ><img
+              src="https://freeconfig.constraint.systems/static/freeconfig.gif"
+          /></a>
+        </div>
+        <a href="https://freeconfig.constraint.systems">Freeconfig</a>
+        - push around image pixels in blocks.
+      </li>
+      <li>
+        2019.10.04<br />
+        <div class="flex">
+          <a class="image-link" href="https://moire.constraint.systems"
+            ><img src="https://moire.constraint.systems/static/moire.gif"
+          /></a>
+        </div>
+        <a href="https://moire.constraint.systems">Moire</a>
+        - generate angular skyscapes using Asteroids-like ship controls.
+      </li>
+      <li>
+        2019.09.25<br />
+        <div class="flex">
+          <a class="image-link" href="https://hex.constraint.systems"
+            ><img src="https://hex.constraint.systems/static/share.gif"
+          /></a>
+        </div>
+        <a href="https://hex.constraint.systems">Hex</a> - a keyboard-driven,
+        grid-based drawing tool.
+      </li>
+      <li>
+        2019.09.19<br />
+        <div class="flex">
+          <a class="image-link" href="https://etch.constraint.systems"
+            ><img src="https://etch.constraint.systems/static/share.gif"
+          /></a>
+        </div>
+        <a href="https://etch.constraint.systems">Etch</a> - a keyboard-based
+        pixel drawing tool.
+      </li>
+    </ul>
+    <div class="wrapper" style="margin-top: 1.5rem">
+      <p>
+        Follow our releases on
+        <a href="https://twitter.com/constraint_sys">Twitter</a>.
+      </p>
+      <p>
+        <a href="https://github.com/constraint-systems/index">View source</a>
+      </p>
     </div>
   </body>
 </html>
