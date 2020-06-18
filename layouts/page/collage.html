@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <div style="width: 1600px; height: 800px;">
+  {{ range $index, $element := .Site.RegularPages.ByDate }}
+    <img style="position: absolute; left: 0; top: 0; max-width: 400px; max-height: 400px;" src="{{ .Params.Image }}" />
+  {{ end }}
+  </div>
+</div>
+  <script>
+    window.addEventListener('load', () => {
+      let images = document.querySelectorAll('img')
+      for (let image of images) {
+        image.style.left = Math.random() * (1600 - 400) + 'px'
+        image.style.top = Math.random() * (800 - 400) + 'px'
+      }
+    })
+  </script>
+{{ end }}

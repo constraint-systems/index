@@ -1,0 +1,8 @@
+baseURL = "http://constraint.systems/"
+languageCode = "en-us"
+title = "Constraint Systems"
+
+[outputFormats]
+[outputFormats.RSS]
+  mediatype = "application/rss"
+  baseName = "rss"

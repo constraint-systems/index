@@ -1,0 +1,40 @@
+{{ define "head" }}
+{{ $title := "Constraint Systems" }}
+{{ $description := "Alternative interfaces for editing and creating images and text." }}
+<title>{{ $title }}</title>
+<meta property="description" content="{{ $description }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:image" content="{{ .Site.BaseURL }}collage.png">
+<meta property="og:url" content="{{ .Site.BaseURL }}">
+<meta property="twitter:card" content="summary_large_image">
+{{ with .OutputFormats.Get "rss" -}}
+{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+{{ end }}
+
+{{ define "main" }}
+  <div class="container">
+    <div class="hspacer"></div>
+    <div>
+      <div>Constraint Systems</div>
+      <p>Alternative interfaces for editing and creating images and text.</p>
+    </div>
+    <div class="spacer"></div>
+    {{ range $index, $element := where .Site.RegularPages.ByDate.Reverse "Section" "posts" }}
+      {{ $number := sub (len .Site.RegularPages) $index}}
+      <div class="post">
+        <div><p>{{ .Date.Format "2006 01 02" }}</p></div>
+        <div><a href="{{ .Params.link }}"><img src="{{ .Params.Image }}" /></a></div>
+        <div><a href="{{ .Params.link }}">{{ .Title }}</a></div>
+        <div>{{ .Content }}</div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+      </div>
+    {{ end }}
+    <div>
+      {{ "[View source](https://github.com/constraint-systems)&nbsp; [Twitter](https://twitter.com/constraint_sys)&nbsp; [RSS](/rss.xml)" | markdownify }}
+    </div>
+    <div class="spacer"></div>
+ </div>
+{{ end }}
