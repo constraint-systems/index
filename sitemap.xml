@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://constraint.systems/</loc>
+    <lastmod>2020-06-17T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/posts/</loc>
+    <lastmod>2020-06-17T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/posts/span/</loc>
+    <lastmod>2020-06-17T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/posts/stamp/</loc>
+    <lastmod>2020-04-23T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/posts/collapse/</loc>
+    <lastmod>2020-03-21T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/posts/res/</loc>
+    <lastmod>2020-03-16T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/posts/rgb/</loc>
+    <lastmod>2020-03-08T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/posts/face/</loc>
+    <lastmod>2020-02-23T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/posts/pal/</loc>
+    <lastmod>2020-01-08T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/posts/bix/</loc>
+    <lastmod>2019-12-28T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/posts/diptych/</loc>
+    <lastmod>2019-11-08T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/posts/slide/</loc>
+    <lastmod>2019-10-29T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/posts/freeconfig/</loc>
+    <lastmod>2019-10-08T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/posts/moire/</loc>
+    <lastmod>2019-10-04T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/posts/hex/</loc>
+    <lastmod>2019-09-25T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/posts/etch/</loc>
+    <lastmod>2019-09-19T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/collage/</loc>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/tags/</loc>
+  </url>
+  
+</urlset>
