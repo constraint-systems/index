@@ -27,7 +27,7 @@
   {{ range $index, $element := where .Site.RegularPages.ByDate.Reverse "Section" "posts" }}
     {{ $number := sub (len .Site.RegularPages) $index}}
     <div class="post" style="padding-left: 12px; padding-right: 12px;">
-      <div>{{ .Date.Format "2006.01.02" }}</div>
+      <div style="display: none;">{{ .Date.Format "2006.01.02" }}</div>
       <div><a href="{{ .Params.link }}"><img src="{{ .Params.Image }}" /></a></div>
       <div><a href="{{ .Params.link }}">{{ .Title }}</a></div>
       <div>{{ .Content }}</div>
