@@ -2,6 +2,14 @@ baseURL = "http://constraint.systems/"
 languageCode = "en-us"
 title = "Constraint Systems"
 
+[permalinks]
+  tools = "/gallery/tools/:title/"
+  authors = "/gallery/authors/:title/"
+
+[taxonomies]
+  author = "authors"
+  tool = "tools"
+
 [outputFormats]
 [outputFormats.RSS]
   mediatype = "application/rss"

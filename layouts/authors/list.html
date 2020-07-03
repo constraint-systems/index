@@ -1,0 +1,40 @@
+{{ define "head" }}
+{{ $title := printf "Constraint Systems Gallery - %s" .Name }}
+{{ $description := printf "Work created using by %s using the Constraint Systems tools." .Name }}
+<title>{{ $title }}</title>
+<meta property="description" content="{{ $description }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:image" content="{{ .Site.BaseURL }}collage.png">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="twitter:card" content="summary_large_image">
+
+<script src="/imagesloaded.js"></script>
+<script src="/gridmasonry.js"></script>
+{{ end }}
+
+{{ define "main" }}
+{{ partial "header" . }}
+<div style="background: #aaa">
+  <div class="container">
+    {{ "[Gallery](/gallery)" | markdownify }} Author
+  </div>
+</div>
+<div class="container">
+  <div class="spacer"></div>
+  <div>
+    <div>{{ .Title}}</div>
+    <div><p>{{ .Params.link | markdownify }}</p></div>
+  </div>
+  <div class="spacer"></div>
+  <div id="link-grid">
+    {{ range .Pages }}
+      {{ partial "post_link" . }}
+    {{ end }}
+  </div>
+  <div class="spacer"></div>
+</div>
+{{ partial "footer" . }}
+{{ end }}
+ 
+

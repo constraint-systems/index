@@ -1,0 +1,92 @@
+{{ define "head" }}
+{{ $title := printf "%s - Constraint Systems Gallery" .File.BaseFileName }}
+{{ $description := printf "Created by %s using %s." (delimit .Params.authors ", ") (delimit .Params.tools ", ") }}
+<title>{{ $title }}</title>
+<meta property="description" content="{{ $description }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:image" content="{{ .Site.BaseURL }}images/{{ .Params.Image }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="twitter:card" content="summary_large_image">
+{{ end }}
+
+{{ define "main" }}
+{{ partial "header" . }}
+<div style="background: #aaa">
+  <div class="container">
+    {{ "[Gallery](/gallery/)" | markdownify }}
+  </div>
+</div>
+<div class="container">
+ <div class="spacer"></div>
+  <div>Post</div>
+  <div class="spacer"></div>
+  <div>{{ .Date.Format "2006.01.02" }}</div>
+  <div>
+    <div></div><img src="/images/{{ .Params.Image }}" />
+  </div>
+  <div><p>{{ .Content }}</p></div>
+  <div><p>Source: {{ .Params.source | markdownify }}</p></div>
+  <div><p>
+      {{ $taxo := "authors" }}
+      {{ with .Param $taxo }}
+      By
+      {{ range $index, $director := . }}
+      {{- if gt $index 0 }}, {{ end -}}
+      {{ with $.Site.GetPage (printf "/%s/%s" $taxo $director) -}}
+      <a href="{{ .Permalink }}">{{ $director }}</a>
+      {{- end -}}
+      {{- end -}}
+      {{ end }}
+    </p></div>
+  <div><p>
+      {{ $taxo := "tools" }}
+      {{ with .Param $taxo }}
+      Using
+      {{ range $index, $director := . }}
+      {{- if gt $index 0 }}, {{ end -}}
+      {{ with $.Site.GetPage (printf "/%s/%s" $taxo $director) -}}
+      <a href="{{ .Permalink }}">{{ $director }}</a>
+      {{- end -}}
+      {{- end -}}
+      {{ end }}
+    </p></div>
+     <div class="spacer"></div>
+      <div class="spacer"></div>
+      <div>Tool</div>
+      <div class="spacer"></div>
+      <div><p>
+          {{ range .Param "tools" }}
+          <div>
+            {{ with $.Site.GetPage (printf "/tools_content/%s.md" (lower .) ) -}}
+              <div>{{ .Title }}</div>
+              <div>{{ .Content }}</div>
+              <div><p>{{ .Params.link | markdownify }}</p></div>
+            {{ end }}
+          </div>
+          {{ end }}
+        </p></div>
+        <div class="spacer"></div>
+ 
+</div>
+
+{{ $pages := (where .Site.RegularPages.ByDate.Reverse "Section" "gallery") }}
+<div style="position: fixed; left: 0; bottom: 0; width: 100vw;">
+  <div class="container" style="display: grid; grid-template-columns: 1fr 1fr;">
+  <div>
+    {{with $pages.Next .}}
+    <a href="{{ .RelPermalink }}" style="display: block; padding-left: 2ch;  padding-bottom: 24px;  padding-top: 12px; text-align: center;"><span class="button-hover" style="display: inline-block; padding-left: 0; padding-right: 0; background: #aaa; color: #222; text-decoration: underline;">Prev</span></a> 
+    {{ end }}
+  </div>
+  <div>
+    {{with $pages.Prev .}}
+    <a href="{{ .RelPermalink }}" style="display: block; padding-left: 2ch;  padding-bottom: 24px; padding-top: 12px; text-align: center;"><span class="button-hover" style="display: inline-block; padding-left: 0; padding-right: 0; background: #aaa; color: #222; text-decoration: underline;">Next</span></a> 
+    {{ end }}
+  </div>
+  </div>
+</div>
+
+{{ partial "footer" . }}
+<div class="spacer"></div>
+<div class="spacer"></div>
+{{ end }}

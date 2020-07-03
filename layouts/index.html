@@ -14,33 +14,18 @@
 {{ end }}
 
 {{ define "main" }}
-<div style="max-width: 1800px; margin: 0 auto;">
-  <div style="padding-left: 12px; padding-right: 12px;">
-    <div class="hspacer"></div>
-    <div>
-      <div>Constraint Systems</div>
-      <p>Alternative interfaces for editing and creating images and text.</p>
-    </div>
-    <div class="spacer"></div>
-  </div>
-  <div id="link-grid">
-  {{ range $index, $element := where .Site.RegularPages.ByDate.Reverse "Section" "posts" }}
-    {{ $number := sub (len .Site.RegularPages) $index}}
-    <div class="post" style="padding-left: 12px; padding-right: 12px;">
-      <div>{{ .Date.Format "2006.01.02" }}</div>
-      <div><a href="{{ .Params.link }}"><img src="{{ .Params.Image }}" /></a></div>
-      <div><a href="{{ .Params.link }}">{{ .Title }}</a></div>
-      <div>{{ .Content }}</div>
-      <div class="spacer"></div>
-    </div>
-  {{ end }}
-  </div>
-  <div style="padding-left: 12px; padding-right: 12px;">
-    <div>
-      {{ "[View source](https://github.com/constraint-systems)&nbsp; [Twitter](https://twitter.com/constraint_sys)&nbsp; [RSS](/rss.xml)" | markdownify }}
-    </div>
-    <div class="spacer"></div>
-  </div>
- </div>
+{{ partial "header.html" . }}
+<div class="spacer"></div>
+<div class="container">
+<div>Tools</div>
+<div><p>Alternative interfaces for creating and editing images and text.</p></div>
+<div class="spacer"></div>
+<div id="link-grid">
+{{ range where .Site.RegularPages "Section" "tools_content" }}
+  {{ partial "tool_link" . }}
+{{ end }}
 </div>
+<div class="spacer"></div>
+</div>
+{{ partial "footer" . }}
 {{ end }}
