@@ -6,7 +6,7 @@
     <description>Alternative interfaces for editing and creating images and text.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jun 2020 04:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2020 21:23:24 +0000</lastBuildDate>
     
     <atom:link href="http://constraint.systems/rss.xml" rel="self" type="application/rss+xml" />
     
@@ -16,7 +16,7 @@
       <link>https://span.constraint.systems</link>
       <pubDate>Wed, 17 Jun 2020 04:00:00 +0000</pubDate>
       
-      <guid>http://constraint.systems/posts/span/</guid>
+      <guid>http://constraint.systems/tools_content/span/</guid>
       <description>
         <div>
           <a href="https://span.constraint.systems"><img style="display: block; max-width: 100%;" src="https://span.constraint.systems/span.gif"/></a>
@@ -32,7 +32,7 @@
       <link>https://stamp.constraint.systems</link>
       <pubDate>Thu, 23 Apr 2020 04:00:00 +0000</pubDate>
       
-      <guid>http://constraint.systems/posts/stamp/</guid>
+      <guid>http://constraint.systems/tools_content/stamp/</guid>
       <description>
         <div>
           <a href="https://stamp.constraint.systems"><img style="display: block; max-width: 100%;" src="https://stamp.constraint.systems/public/stamp.gif"/></a>
@@ -48,7 +48,7 @@
       <link>https://collapse.constraint.systems</link>
       <pubDate>Sat, 21 Mar 2020 04:00:00 +0000</pubDate>
       
-      <guid>http://constraint.systems/posts/collapse/</guid>
+      <guid>http://constraint.systems/tools_content/collapse/</guid>
       <description>
         <div>
           <a href="https://collapse.constraint.systems"><img style="display: block; max-width: 100%;" src="https://collapse.constraint.systems/collapse.gif"/></a>
@@ -64,7 +64,7 @@
       <link>https://res.constraint.systems</link>
       <pubDate>Mon, 16 Mar 2020 04:00:00 +0000</pubDate>
       
-      <guid>http://constraint.systems/posts/res/</guid>
+      <guid>http://constraint.systems/tools_content/res/</guid>
       <description>
         <div>
           <a href="https://res.constraint.systems"><img style="display: block; max-width: 100%;" src="https://res.constraint.systems/res.gif"/></a>
@@ -80,7 +80,7 @@
       <link>https://rgb.constraint.systems</link>
       <pubDate>Sun, 08 Mar 2020 05:00:00 +0000</pubDate>
       
-      <guid>http://constraint.systems/posts/rgb/</guid>
+      <guid>http://constraint.systems/tools_content/rgb/</guid>
       <description>
         <div>
           <a href="https://rgb.constraint.systems"><img style="display: block; max-width: 100%;" src="https://rgb.constraint.systems/rgb.gif"/></a>
@@ -96,7 +96,7 @@
       <link>https://face.constraint.systems</link>
       <pubDate>Sun, 23 Feb 2020 05:00:00 +0000</pubDate>
       
-      <guid>http://constraint.systems/posts/face/</guid>
+      <guid>http://constraint.systems/tools_content/face/</guid>
       <description>
         <div>
           <a href="https://face.constraint.systems"><img style="display: block; max-width: 100%;" src="https://face.constraint.systems/facelong.gif"/></a>
@@ -112,7 +112,7 @@
       <link>https://pal.constraint.systems</link>
       <pubDate>Wed, 08 Jan 2020 05:00:00 +0000</pubDate>
       
-      <guid>http://constraint.systems/posts/pal/</guid>
+      <guid>http://constraint.systems/tools_content/pal/</guid>
       <description>
         <div>
           <a href="https://pal.constraint.systems"><img style="display: block; max-width: 100%;" src="https://pal.constraint.systems/pal.gif"/></a>
@@ -128,7 +128,7 @@
       <link>https://bix.constraint.systems</link>
       <pubDate>Sat, 28 Dec 2019 05:00:00 +0000</pubDate>
       
-      <guid>http://constraint.systems/posts/bix/</guid>
+      <guid>http://constraint.systems/tools_content/bix/</guid>
       <description>
         <div>
           <a href="https://bix.constraint.systems"><img style="display: block; max-width: 100%;" src="https://bix.constraint.systems/bix.gif"/></a>
@@ -144,7 +144,7 @@
       <link>https://diptych.constraint.systems</link>
       <pubDate>Fri, 08 Nov 2019 05:00:00 +0000</pubDate>
       
-      <guid>http://constraint.systems/posts/diptych/</guid>
+      <guid>http://constraint.systems/tools_content/diptych/</guid>
       <description>
         <div>
           <a href="https://diptych.constraint.systems"><img style="display: block; max-width: 100%;" src="https://diptych.constraint.systems/diptych.gif"/></a>
@@ -160,7 +160,7 @@
       <link>https://slide.constraint.systems</link>
       <pubDate>Tue, 29 Oct 2019 04:00:00 +0000</pubDate>
       
-      <guid>http://constraint.systems/posts/slide/</guid>
+      <guid>http://constraint.systems/tools_content/slide/</guid>
       <description>
         <div>
           <a href="https://slide.constraint.systems"><img style="display: block; max-width: 100%;" src="https://slide.constraint.systems/slide.gif"/></a>
@@ -176,7 +176,7 @@
       <link>https://freeconfig.constraint.systems</link>
       <pubDate>Tue, 08 Oct 2019 04:00:00 +0000</pubDate>
       
-      <guid>http://constraint.systems/posts/freeconfig/</guid>
+      <guid>http://constraint.systems/tools_content/freeconfig/</guid>
       <description>
         <div>
           <a href="https://freeconfig.constraint.systems"><img style="display: block; max-width: 100%;" src="https://freeconfig.constraint.systems/static/freeconfig.gif"/></a>
@@ -192,7 +192,7 @@
       <link>https://moire.constraint.systems</link>
       <pubDate>Fri, 04 Oct 2019 04:00:00 +0000</pubDate>
       
-      <guid>http://constraint.systems/posts/moire/</guid>
+      <guid>http://constraint.systems/tools_content/moire/</guid>
       <description>
         <div>
           <a href="https://moire.constraint.systems"><img style="display: block; max-width: 100%;" src="https://moire.constraint.systems/static/moire.gif"/></a>
@@ -208,7 +208,7 @@
       <link>https://hex.constraint.systems</link>
       <pubDate>Wed, 25 Sep 2019 04:00:00 +0000</pubDate>
       
-      <guid>http://constraint.systems/posts/hex/</guid>
+      <guid>http://constraint.systems/tools_content/hex/</guid>
       <description>
         <div>
           <a href="https://hex.constraint.systems"><img style="display: block; max-width: 100%;" src="https://hex.constraint.systems/static/share.gif"/></a>
@@ -224,7 +224,7 @@
       <link>https://etch.constraint.systems</link>
       <pubDate>Thu, 19 Sep 2019 04:00:00 +0000</pubDate>
       
-      <guid>http://constraint.systems/posts/etch/</guid>
+      <guid>http://constraint.systems/tools_content/etch/</guid>
       <description>
         <div>
           <a href="https://etch.constraint.systems"><img style="display: block; max-width: 100%;" src="https://etch.constraint.systems/static/share.gif"/></a>

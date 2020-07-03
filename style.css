@@ -15,29 +15,16 @@ img {
   max-width: 100%;
   display: block;
 }
-.container {
-  max-width: calc(68ch + 24px);
-  padding-left: 12px;
-  padding-right: 12px;
-  margin: 0 auto;
-}
-.post img {
-  margin-top: 4px;
-  margin-bottom: 4px;
-  max-height: 640px;
-}
-.single .post img {
-  margin-top: 6px;
-  margin-bottom: 6px;
+p {
+  margin: 0;
+  padding: 0;
+  text-indent: 2ch;
 }
 a {
   color: inherit;
   word-break: break-word;
 }
-p {
-  margin: 0;
-  text-indent: 2ch;
-}
+
 .qspacer {
   width: 100%;
   height: 6px;
@@ -50,6 +37,7 @@ p {
   width: 100%;
   height: 24px;
 }
+
 .pagination {
   list-style: none;
   display: flex;
@@ -65,11 +53,12 @@ p {
   text-decoration: none;
 }
 .button-hover {
-  background: #ccc;
+  background: #aaa;
 }
 .button-hover:hover {
-  background: #bbb;
+  background: #999;
 }
+
 button {
   font-family: inherit;
   font-size: inherit;
@@ -85,4 +74,19 @@ button {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(40ch, 1fr));
   justify-content: center;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+}
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 100%;
+}
+img {
+  margin-bottom: 4px;
+}
+div + img {
+  margin-top: 4px;
 }
