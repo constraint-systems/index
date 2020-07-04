@@ -18,6 +18,10 @@ echo "Image:"
 read image_path
 echo "image: $image_path" >> "$place"
 
+echo "Source:"
+read source
+echo "Source: $source" >> "$place"
+
 echo "Author:"
 read author
 echo "authors:

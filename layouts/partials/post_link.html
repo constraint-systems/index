@@ -4,8 +4,8 @@
   <div>
     <a href="{{ .RelPermalink }}"><div></div><img src="/images/{{ .Params.Image }}" /></a>
   </div>
-  {{ if isset .Params "source" }}
   <div><p>{{ .Content }}</p></div>
+  {{ if isset .Params "source" }}
   <div><p>Source: {{ .Params.source | markdownify }}</p></div>
   {{ end }}
   <div><p>
@@ -20,7 +20,6 @@
       {{- end -}}
       {{ end }}
     </p></div>
-
   <div><p>
     {{ $taxo := "tools" }}
     {{ with .Param $taxo }}
