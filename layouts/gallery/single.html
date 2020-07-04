@@ -17,9 +17,22 @@
     {{ "[Gallery](/gallery/)" | markdownify }}
   </div>
 </div>
+
 <div class="container">
  <div class="spacer"></div>
   <div>Post</div>
+  {{ $pages := (where .Site.RegularPages.ByDate.Reverse "Section" "gallery") }}
+  <div style="padding-left: 2ch;">
+    <span style="width: 5ch; display: inline-block; text-align: left;">
+      {{with $pages.Next .}}
+      <a href="{{ .RelPermalink }}">Prev</a>
+      {{ end }}
+    </span>
+    {{with $pages.Prev .}}
+    <a href="{{ .RelPermalink }}">Next</a> 
+    {{ end }}
+  </div>
+
   <div class="spacer"></div>
   <div>{{ .Date.Format "2006.01.02" }}</div>
   <div>
@@ -72,23 +85,5 @@
  
 </div>
 
-{{ $pages := (where .Site.RegularPages.ByDate.Reverse "Section" "gallery") }}
-<div style="position: fixed; left: 0; bottom: 0; width: 100vw;">
-  <div class="container" style="display: grid; grid-template-columns: 1fr 1fr;">
-  <div>
-    {{with $pages.Next .}}
-    <a href="{{ .RelPermalink }}" style="display: block; padding-left: 2ch;  padding-bottom: 24px;  padding-top: 12px; text-align: center;"><span class="button-hover" style="display: inline-block; padding-left: 0; padding-right: 0; background: #aaa; color: #222; text-decoration: underline;">Prev</span></a> 
-    {{ end }}
-  </div>
-  <div>
-    {{with $pages.Prev .}}
-    <a href="{{ .RelPermalink }}" style="display: block; padding-left: 2ch;  padding-bottom: 24px; padding-top: 12px; text-align: center;"><span class="button-hover" style="display: inline-block; padding-left: 0; padding-right: 0; background: #aaa; color: #222; text-decoration: underline;">Next</span></a> 
-    {{ end }}
-  </div>
-  </div>
-</div>
-
 {{ partial "footer" . }}
-<div class="spacer"></div>
-<div class="spacer"></div>
 {{ end }}
