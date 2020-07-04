@@ -6,10 +6,19 @@
     <description>Recent content in Authors on Constraint Systems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jul 2020 12:24:49 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2020 15:09:07 +0000</lastBuildDate>
     
 	<atom:link href="http://constraint.systems/authors/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>lossless</title>
+      <link>http://constraint.systems/gallery/authors/lossless/</link>
+      <pubDate>Sat, 04 Jul 2020 15:09:07 +0000</pubDate>
+      
+      <guid>http://constraint.systems/gallery/authors/lossless/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Grant</title>

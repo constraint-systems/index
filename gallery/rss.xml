@@ -6,10 +6,37 @@
     <description>Work made using the Constraint Systems tools.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jul 2020 12:24:49 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2020 15:09:07 +0000</lastBuildDate>
     
     <atom:link href="http://constraint.systems/gallery/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020-07-04-150907</title>
+      <link>http://constraint.systems/gallery/2020-07-04-150907/</link>
+      <pubDate>Sat, 04 Jul 2020 15:09:07 +0000</pubDate>
+      
+      <guid>http://constraint.systems/gallery/2020-07-04-150907/</guid>
+      <description>
+      <div>
+        <div></div><img src="/images/losless-stamp-1593889737.png" />
+      </div>
+      <p></p>
+      <p>Source: <a href="https://en.wikipedia.org/wiki/In_the_Mood_for_Love">https://en.wikipedia.org/wiki/In_the_Mood_for_Love</a></p>
+      <p>
+          
+          
+          By
+          <a href="http://constraint.systems/gallery/authors/lossless/">lossless</a>
+        </p>
+      <p>
+          
+          
+          Using
+          <a href="http://constraint.systems/gallery/tools/stamp/">Stamp</a>
+      </p>
+    </description>
+    </item>
     
     <item>
       <title>2020-07-04-122449</title>
