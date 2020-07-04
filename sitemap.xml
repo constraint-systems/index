@@ -3,37 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://constraint.systems/gallery/2020-07-04-102449/</loc>
+    <lastmod>2020-07-04T10:24:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/authors/</loc>
+    <lastmod>2020-07-04T10:24:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/gallery/authors/carella/</loc>
+    <lastmod>2020-07-04T10:24:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/</loc>
+    <lastmod>2020-07-04T10:24:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/gallery/</loc>
+    <lastmod>2020-07-04T10:24:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/gallery/tools/pal/</loc>
+    <lastmod>2020-07-04T10:24:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/tools/</loc>
+    <lastmod>2020-07-04T10:24:49+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://constraint.systems/gallery/2020-07-02-212324/</loc>
     <lastmod>2020-07-02T21:23:24+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://constraint.systems/authors/</loc>
-    <lastmod>2020-07-02T21:23:24+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://constraint.systems/</loc>
-    <lastmod>2020-07-02T21:23:24+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://constraint.systems/gallery/</loc>
-    <lastmod>2020-07-02T21:23:24+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://constraint.systems/gallery/authors/grant/</loc>
-    <lastmod>2020-07-02T21:23:24+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://constraint.systems/gallery/tools/pal/</loc>
-    <lastmod>2020-07-02T21:23:24+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://constraint.systems/tools/</loc>
     <lastmod>2020-07-02T21:23:24+00:00</lastmod>
   </url>
   
