@@ -13,6 +13,7 @@ window.addEventListener('load', () => {
   function resizeInstance(instance) {
     let $item = instance.elements[0]
     resizeGridItem($item)
+    $item.style.opacity = 1
   }
 
   function resizeAllGridItems() {
