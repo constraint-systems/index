@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Bix</title>
+      <title>Bit</title>
       <link>https://bit.constraint.systems</link>
       <pubDate>Sun, 12 Jul 2020 05:00:00 +0000</pubDate>
       
@@ -21,8 +21,8 @@
         <div>
           <a href="https://bit.constraint.systems"><img style="display: block; max-width: 100%;" src="https://bit.constraint.systems/bit.gif"/></a>
         </div>
-        <div><a href="https://bit.constraint.systems">Bix</a></div>
-        <p>Draw on binary to glitch text.</p>
+        <div><a href="https://bit.constraint.systems">Bit</a></div>
+        <p>Bit is a grid-based, keyboard-driven pixel drawing tool. It is focused on maintaining flow as you draw and resize.</p>
 
       </description>
     </item>
