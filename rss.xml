@@ -6,10 +6,26 @@
     <description>Alternative interfaces for editing and creating images and text.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jul 2020 15:09:07 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2020 05:00:00 +0000</lastBuildDate>
     
     <atom:link href="http://constraint.systems/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bix</title>
+      <link>https://bit.constraint.systems</link>
+      <pubDate>Sun, 12 Jul 2020 05:00:00 +0000</pubDate>
+      
+      <guid>http://constraint.systems/tools_content/bit/</guid>
+      <description>
+        <div>
+          <a href="https://bit.constraint.systems"><img style="display: block; max-width: 100%;" src="https://bit.constraint.systems/bit.gif"/></a>
+        </div>
+        <div><a href="https://bit.constraint.systems">Bix</a></div>
+        <p>Draw on binary to glitch text.</p>
+
+      </description>
+    </item>
     
     <item>
       <title>Span</title>
