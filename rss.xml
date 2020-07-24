@@ -6,26 +6,10 @@
     <description>Alternative interfaces for editing and creating images and text.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2020 05:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2020 15:09:07 +0000</lastBuildDate>
     
     <atom:link href="http://constraint.systems/rss.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Bit</title>
-      <link>https://bit.constraint.systems</link>
-      <pubDate>Sun, 12 Jul 2020 05:00:00 +0000</pubDate>
-      
-      <guid>http://constraint.systems/tools_content/bit/</guid>
-      <description>
-        <div>
-          <a href="https://bit.constraint.systems"><img style="display: block; max-width: 100%;" src="https://bit.constraint.systems/bit.gif"/></a>
-        </div>
-        <div><a href="https://bit.constraint.systems">Bit</a></div>
-        <p>Bit is a grid-based, keyboard-driven pixel drawing tool. It is focused on maintaining flow as you draw and resize.</p>
-
-      </description>
-    </item>
     
     <item>
       <title>Span</title>
