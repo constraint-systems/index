@@ -6,10 +6,26 @@
     <description>Alternative interfaces for editing and creating images and text.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jul 2020 15:09:07 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2020 04:00:00 +0000</lastBuildDate>
     
     <atom:link href="http://constraint.systems/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Automadraw</title>
+      <link>https://automadraw.constraint.systems</link>
+      <pubDate>Thu, 30 Jul 2020 04:00:00 +0000</pubDate>
+      
+      <guid>http://constraint.systems/tools_content/automadraw/</guid>
+      <description>
+        <div>
+          <a href="https://automadraw.constraint.systems"><img style="display: block; max-width: 100%;" src="http://automadraw.constraint.systems/automadraw.gif"/></a>
+        </div>
+        <div><a href="https://automadraw.constraint.systems">Automadraw</a></div>
+        <p>Draw and evolve your drawing using cellular automata on a pixel grid with two keyboard-controlled cursors.</p>
+
+      </description>
+    </item>
     
     <item>
       <title>Span</title>

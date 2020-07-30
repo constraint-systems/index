@@ -6,10 +6,19 @@
     <description>Recent content in Tools_contents on Constraint Systems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jun 2020 04:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2020 04:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://constraint.systems/tools_content/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Automadraw</title>
+      <link>http://constraint.systems/tools_content/automadraw/</link>
+      <pubDate>Thu, 30 Jul 2020 04:00:00 +0000</pubDate>
+      
+      <guid>http://constraint.systems/tools_content/automadraw/</guid>
+      <description>Draw and evolve your drawing using cellular automata on a pixel grid with two keyboard-controlled cursors.</description>
+    </item>
     
     <item>
       <title>Span</title>
