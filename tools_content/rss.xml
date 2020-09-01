@@ -6,10 +6,19 @@
     <description>Recent content in Tools_contents on Constraint Systems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jul 2020 04:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2020 04:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://constraint.systems/tools_content/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sift</title>
+      <link>http://constraint.systems/tools_content/sift/</link>
+      <pubDate>Tue, 01 Sep 2020 04:00:00 +0000</pubDate>
+      
+      <guid>http://constraint.systems/tools_content/sift/</guid>
+      <description>Sift slices an image into multiple layers. You can offset the slices to create interference patterns and pseudo-3D effects.</description>
+    </item>
     
     <item>
       <title>Automadraw</title>

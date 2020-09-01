@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://constraint.systems/tools_content/automadraw/</loc>
-    <lastmod>2020-07-30T04:00:00+00:00</lastmod>
+    <loc>http://constraint.systems/</loc>
+    <lastmod>2020-09-01T04:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://constraint.systems/</loc>
-    <lastmod>2020-07-30T04:00:00+00:00</lastmod>
+    <loc>http://constraint.systems/tools_content/sift/</loc>
+    <lastmod>2020-09-01T04:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://constraint.systems/tools_content/</loc>
+    <lastmod>2020-09-01T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://constraint.systems/tools_content/automadraw/</loc>
     <lastmod>2020-07-30T04:00:00+00:00</lastmod>
   </url>
   
