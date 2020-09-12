@@ -309,9 +309,7 @@ window.addEventListener('load', () => {
 
     if (id !== 'about') {
       let $app_resize = $app.querySelector('.preview-resize')
-      console.log('add to resize')
       $app_resize.addEventListener('mousedown', e => {
-        console.log('clicked')
         cache.resize_mouse_position = [e.clientX, e.clientY]
         cache.resize_dims = [$app.offsetWidth, $app.offsetHeight]
         cache.resizing_index = preview_ids.indexOf(id)
@@ -350,7 +348,6 @@ window.addEventListener('load', () => {
 
   document.addEventListener('mousemove', e => {
     // resize
-    console.log(e.clientX, e.clientY)
     if (
       e.clientX > 0 &&
       e.clientY > 0 &&
@@ -358,7 +355,6 @@ window.addEventListener('load', () => {
       e.clientY < window.innerHeight
     ) {
       if (cache.resize_mouse_position !== null) {
-        console.log('resize')
         let diff = [
           cache.resize_mouse_position[0] - e.clientX,
           cache.resize_mouse_position[1] - e.clientY,
