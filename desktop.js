@@ -309,8 +309,10 @@ window.addEventListener('load', () => {
 
     if (id !== 'about') {
       let $app_resize = $app.querySelector('.preview-resize')
+      console.log('add to resize')
       $app_resize.addEventListener('mousedown', e => {
-        cache.resize_mouse_position = [e.pageX, e.pageY]
+        console.log('clicked')
+        cache.resize_mouse_position = [e.clientX, e.clientY]
         cache.resize_dims = [$app.offsetWidth, $app.offsetHeight]
         cache.resizing_index = preview_ids.indexOf(id)
         bringToFront(id)
@@ -324,7 +326,7 @@ window.addEventListener('load', () => {
       if (!cache.closing) {
         bringToFront(id)
         $title.style.cursor = 'grabbing'
-        cache.mouse_position = [e.pageX, e.pageY]
+        cache.mouse_position = [e.clientX, e.clientY]
         cache.box_position = [$app.offsetLeft, $app.offsetTop]
         cache.moving_index = preview_ids.indexOf(id)
       }
@@ -348,16 +350,18 @@ window.addEventListener('load', () => {
 
   document.addEventListener('mousemove', e => {
     // resize
+    console.log(e.clientX, e.clientY)
     if (
-      e.pageX > 0 &&
-      e.pageY > 0 &&
-      e.pageX < window.innerWidth &&
-      e.pageY < window.innerHeight
+      e.clientX > 0 &&
+      e.clientY > 0 &&
+      e.clientX < window.innerWidth &&
+      e.clientY < window.innerHeight
     ) {
       if (cache.resize_mouse_position !== null) {
+        console.log('resize')
         let diff = [
-          cache.resize_mouse_position[0] - e.pageX,
-          cache.resize_mouse_position[1] - e.pageY,
+          cache.resize_mouse_position[0] - e.clientX,
+          cache.resize_mouse_position[1] - e.clientY,
         ]
         let app = preview_apps[cache.resizing_index]
         let aspect = tool_data[preview_ids[cache.resizing_index]].aspect
@@ -373,15 +377,15 @@ window.addEventListener('load', () => {
   document.addEventListener('mousemove', e => {
     // move
     if (
-      e.pageX > 0 &&
-      e.pageY > 0 &&
-      e.pageX < window.innerWidth &&
-      e.pageY < window.innerHeight
+      e.clientX > 0 &&
+      e.clientY > 0 &&
+      e.clientX < window.innerWidth &&
+      e.clientY < window.innerHeight
     ) {
       if (cache.mouse_position !== null) {
         let diff = [
-          cache.mouse_position[0] - e.pageX,
-          cache.mouse_position[1] - e.pageY,
+          cache.mouse_position[0] - e.clientX,
+          cache.mouse_position[1] - e.clientY,
         ]
         let app = preview_apps[cache.moving_index]
         app.left = cache.box_position[0] - diff[0]
