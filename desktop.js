@@ -354,7 +354,7 @@ window.addEventListener('load', () => {
       e.pageX < window.innerWidth &&
       e.pageY < window.innerHeight
     ) {
-      if (e.pageX > 0 && e.pageY > 0) {
+      if (cache.resize_mouse_position !== null) {
         let diff = [
           cache.resize_mouse_position[0] - e.pageX,
           cache.resize_mouse_position[1] - e.pageY,
