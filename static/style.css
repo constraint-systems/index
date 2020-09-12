@@ -55,7 +55,7 @@ strong {
 .button {
   display: inline-block;
   border: solid 1px black;
-  font-family: 'Karrik';
+  font-family: 'karrik-custom', sans-serif;
   font-size: 15px;
   font-weight: 700;
   text-decoration: none;
@@ -252,7 +252,7 @@ html {
 .preview-title {
   background: #222;
   color: #ccc;
-  font-family: 'Karrik';
+  font-family: 'karrik-custom', sans-serif;
   font-weight: 700;
   font-size: 11px;
   line-height: 16px;
