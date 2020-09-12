@@ -1,0 +1,140 @@
+{{ define "head" }}
+  {{ $title := "Constraint Systems" }}
+  {{ $description := "Alternative interfaces for editing and creating images and text." }}
+  <title>{{ $title }}</title>
+  <meta property="description" content="{{ $description }}" />
+  <meta property="og:title" content="{{ $title }}" />
+  <meta property="og:description" content="{{ $description }}" />
+  <meta property="og:image" content="{{ .Site.BaseURL }}collage.png" />
+  <meta property="og:url" content="{{ .Site.BaseURL }}" />
+  <meta property="twitter:card" content="summary_large_image" />
+  {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+{{ end }}
+
+{{ define "main" }}
+  <div
+    style="padding: 8px 12px; display: flex; justify-content: space-between; background: #222; color: #eee; display: none;"
+  >
+    <div><strong>Constraint Systems</strong></div>
+    <div>experiments in creative constraints</div>
+  </div>
+  <div style="display: flex">
+    <div
+      style="background: #222; width: calc(100% - 340px); height: calc(100%-0px); padding: 24px 24px 24px; padding: 0px; flex-shrink: 0; border-right: solid 2px #222; border: none;"
+    >
+      <div
+        style="color: #ddd; padding: 12px 12px; display: flex; justify-content: space-between; display: none;"
+      >
+        <div>Preview</div>
+      </div>
+      <div
+        id="screen"
+        style="height: 100%; background: #aaa; position: relative; background-image: radial-gradient(#fff, #aaa); background-image: none;"
+      >
+        <div
+          style="position: absolute; left: 0; top: 0; display: flex; justify-content: space-between; width: 100%; padding: 12px;"
+        >
+          <div style="postion: relative; font-size: 18px;">
+            Constraint
+            <div style="position: absolute; left: 48px; top: 34px">Systems</div>
+          </div>
+          <div>
+            <button
+              class="thumbnail-button"
+              style="padding: 0 16px; border-top-left-radius: 13px; border-bottom-left-radius: 13px;"
+            >
+              Clear
+            </button>
+            <button
+              class="thumbnail-button"
+              style="padding: 0 16px; border-top-left-radius: 13px; border-bottom-left-radius: 13px;"
+            >
+              About
+            </button>
+          </div>
+        </div>
+        <div
+          style="position: absolute; left: 0; bottom: 0; width: 100%; padding: 8px 16px; display: flex; justify-content: space-between;"
+        >
+          <div><strong>Experiments in creative constraints</strong></div>
+          <div>
+            <a href="#">Twitter</a> &nbsp<a href="#">Github</a> &nbsp;<a
+              href="#"
+              >RSS</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="sidebar"
+      style="background: #ccc; width: 340px; height: calc(100vh - 0px); overflow: auto;"
+    >
+      <div style="padding: 12px;">
+        <div><strong style="line-height: 24px;">Tools</strong></div>
+        <div>
+          Alternative interfaces for creating and editing images and text
+        </div>
+      </div>
+      <div style="background: #ccc;">
+        {{ range where .Site.RegularPages "Section" "tools_content" }}
+          <div
+            class="thumbnail"
+            data-title="{{ .Title }}"
+            data-gif="/images/tool_gifs/{{ .Params.gif }}"
+            data-gif-aspect="{{ .Params.aspect_ratio }}"
+            data-url="{{ .Params.link }}"
+          >
+            <div>
+              <img src="/images/tool_imgs/{{ .Params.image }}" />
+            </div>
+            <div class="qspacer"></div>
+            <div style="">
+              <strong
+                ><a
+                  class="preview-title"
+                  href="{{ .Params.link }}"
+                  style="text-decoration: none; "
+                  >{{ .Title }}</a
+                ></strong
+              >
+            </div>
+            <div>{{ .Content }}</div>
+            <div class="hspacer"></div>
+            <div
+              style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 8px; text-align: center;"
+            >
+              <button
+                class="preview-button thumbnail-button"
+                style="cursor: pointer; border-top-left-radius: 13px;
+                border-bottom-left-radius: 13px;
+                "
+              >
+                Preview
+              </button>
+              <a
+                class="thumbnail-button"
+                href="{{ .Params.link }}"
+                style="cursor: pointer; text-decoration: none;
+                border-bottom-right-radius: 13px;
+                border-top-right-radius: 13px;
+                "
+                target="_blank"
+              >
+                Launch
+              </a>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  <div style="display: none;">
+    {{ partial "footer" . }}
+  </div>
+
+  <script src="/os.js"></script>
+{{ end }}

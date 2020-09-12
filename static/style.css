@@ -1,95 +1,310 @@
+/* Fonts */
+@font-face {
+  font-family: 'avara-custom';
+  src: url('/fonts/avara.woff') format('woff');
+}
+@font-face {
+  font-family: 'karrik-custom';
+  src: url('/fonts/Karrik-Regular.woff') format('woff');
+}
+
+/* Resets */
 * {
   box-sizing: border-box;
 }
 html,
-body {
+body,
+p {
   padding: 0;
   margin: 0;
-  font-family: 'JetBrains Mono';
-  color: #222;
-  font-size: 16px;
-  line-height: 24px;
-  background: #ccc;
-}
-.background {
-  background: #ccc;
 }
 img {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
-p {
-  margin: 0;
-  padding: 0;
-  text-indent: 2ch;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 400;
 }
 a {
   color: inherit;
-  word-break: break-word;
 }
 
-.qspacer {
-  width: 100%;
-  height: 6px;
-}
-.hspacer {
-  width: 100%;
-  height: 12px;
-}
-.spacer {
-  width: 100%;
-  height: 24px;
+:root {
+  --sidebar-width: 320px;
 }
 
-.pagination {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
+/* Fonts */
+html {
+  font-family: 'avara-custom', serif;
+  font-size: 16px;
+  line-height: 24px;
 }
-.pagination li a {
-  padding-left: 0.66ch;
-  padding-right: 0.66ch;
+strong {
+  font-family: 'karrik-custom', sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
 }
-.pagination li.active a {
-  background: #fff;
+.button {
+  display: inline-block;
+  border: solid 1px black;
+  font-family: 'Karrik';
+  font-size: 15px;
+  font-weight: 700;
   text-decoration: none;
+  height: 24px;
+  line-height: 20px;
+  cursor: pointer;
+  padding-left: 12px;
+  padding-right: 12px;
+  user-select: none;
 }
-.button-hover {
+.button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Padding */
+:root {
+  --p1: 6px;
+  --p2: 12px;
+  --p3: 24px;
+}
+.p1 {
+  padding: var(--p1);
+}
+.px1 {
+  padding-left: var(--p1);
+  padding-right: var(--p1);
+}
+.py1 {
+  padding-top: var(--p1);
+  padding-bottom: var(--p1);
+}
+.p2 {
+  padding: var(--p2);
+}
+.px2 {
+  padding-left: var(--p2);
+  padding-right: var(--p2);
+}
+.py2 {
+  padding-top: var(--p2);
+  padding-bottom: var(--p2);
+}
+.p3 {
+  padding: var(--p3);
+}
+.pxs {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.pys {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.px3 {
+  padding-left: var(--p3);
+  padding-right: var(--p3);
+}
+.py3 {
+  padding-top: var(--p3);
+  padding-bottom: var(--p3);
+}
+.spacer1 {
+  width: 100%;
+  height: var(--p1);
+}
+.spacer2 {
+  width: 100%;
+  height: var(--p2);
+}
+.spacer3 {
+  width: 100%;
+  height: var(--p3);
+}
+
+/* Layout */
+#screen {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: calc(100% - var(--sidebar-width));
+  height: 100vh;
+  user-select: none;
+}
+#sidebar {
+  width: var(--sidebar-width);
+  margin-left: calc(100% - var(--sidebar-width));
+}
+
+/* Styling */
+html {
+  background: #ccc;
+}
+
+/* Screen styling */
+#screen {
   background: #aaa;
+  z-index: 999;
 }
-.button-hover:hover {
-  background: #999;
-}
-
-button {
-  font-family: inherit;
-  font-size: inherit;
-  border: none;
-  padding: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
+#screen-back-top {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+#screen-back-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+#logo {
+  position: relative;
+  font-size: 18px;
+}
+#tagline {
+  user-select: none;
+  cursor: pointer;
+  line-height: 24px;
+}
+#preview-count {
+  display: block;
+  font-size: 15px;
+  height: 24px;
+  line-height: 20px;
+  margin-right: 8px;
+}
+#footer-links {
+  display: flex;
+}
+#footer-links a {
+  margin-left: 8px;
 }
 
-#link-grid {
+/* Sidebar Styling */
+#sidebar {
+  border-left: solid 2px #222;
+}
+#tools-header {
+  background: #ccc;
+  position: sticky;
+  top: 0;
+  border-bottom: solid 2px #222;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  line-height: 28px;
+  align-items: center;
+}
+.thumbnail {
+  border-bottom: solid 1px #222;
+}
+.thumbnail img {
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.thumbnail-button-holder {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(40ch, 1fr));
-  justify-content: center;
-  grid-column-gap: 24px;
-  grid-row-gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 8px;
+  margin-top: 8px;
 }
-.container {
-  max-width: 1800px;
-  margin: 0 auto;
-  padding-left: 8px;
-  padding-right: 8px;
-  width: 100%;
+.thumbnail-button {
+  display: block;
+  text-align: center;
 }
-img {
-  margin-bottom: 4px;
+.button-preview {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
-div + img {
-  margin-top: 4px;
+.button-launch {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.thumbnail.active .button-preview,
+#about-button.active {
+  background: #222;
+  color: #ccc;
+}
+.thumbnail.active .button-preview:hover,
+#about-button.active:hover {
+  background: #444;
+  color: #ddd;
+}
+
+/* Preview Styling */
+.preview-el {
+  outline: solid 2px #222;
+}
+.preview-title {
+  background: #222;
+  color: #ccc;
+  font-family: 'Karrik';
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 16px;
+  height: 20px;
+  padding-left: 4px;
+  padding-right: 4px;
+  user-select: none;
+  cursor: grab;
+}
+.preview-close {
+  position: absolute;
+  cursor: pointer;
+  background: #222;
+  color: #ccc;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  top: 0;
+  text-align: center;
+}
+.preview-close:hover {
+  background: #000;
+  color: #fff;
+}
+.about-content {
+  padding: 12px;
+}
+.preview-resize {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  right: -6px;
+  bottom: -6px;
+  background: transparent;
+  cursor: nwse-resize;
+}
+.preview-el img {
+  cursor: pointer;
+}
+
+/* mobile link */
+#mobile-link {
+  display: none;
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  background: #222;
+  color: #ccc;
+}
+@media only screen and (max-width: 799px) {
+  #mobile-link {
+    display: block;
+    z-index: 9999;
+  }
 }
