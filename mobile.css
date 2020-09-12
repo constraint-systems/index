@@ -1,0 +1,44 @@
+html {
+  background: #222;
+}
+.container {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.preview-title {
+  cursor: default;
+}
+
+#mobile-preview-backer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+#mobile-preview {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#desktop-link {
+  display: none;
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  background: #222;
+  color: #ccc;
+}
+@media only screen and (min-width: 800px) {
+  #desktop-link {
+    display: block;
+  }
+}

@@ -19,10 +19,10 @@
       <guid>http://constraint.systems/tools_content/sift/</guid>
       <description>
         <div>
-          <a href="https://sift.constraint.systems"><img style="display: block; max-width: 100%;" src="http://sift.constraint.systems/sift.gif"/></a>
+          <a href="https://sift.constraint.systems"><img style="display: block; max-width: 100%;" src="sift.png"/></a>
         </div>
         <div><a href="https://sift.constraint.systems">Sift</a></div>
-        <p>Sift slices an image into multiple layers. You can offset the slices to create interference patterns and pseudo-3D effects.</p>
+        <p>Slice an image into multiple layers. You can offset the slices to create interference patterns and pseudo-3D effects.</p>
 
       </description>
     </item>
@@ -35,7 +35,7 @@
       <guid>http://constraint.systems/tools_content/automadraw/</guid>
       <description>
         <div>
-          <a href="https://automadraw.constraint.systems"><img style="display: block; max-width: 100%;" src="http://automadraw.constraint.systems/automadraw.gif"/></a>
+          <a href="https://automadraw.constraint.systems"><img style="display: block; max-width: 100%;" src="automadraw.png"/></a>
         </div>
         <div><a href="https://automadraw.constraint.systems">Automadraw</a></div>
         <p>Draw and evolve your drawing using cellular automata on a pixel grid with two keyboard-controlled cursors.</p>
@@ -51,7 +51,7 @@
       <guid>http://constraint.systems/tools_content/span/</guid>
       <description>
         <div>
-          <a href="https://span.constraint.systems"><img style="display: block; max-width: 100%;" src="https://span.constraint.systems/span.gif"/></a>
+          <a href="https://span.constraint.systems"><img style="display: block; max-width: 100%;" src="span.png"/></a>
         </div>
         <div><a href="https://span.constraint.systems">Span</a></div>
         <p>Lay out and rearrange text, line by line, using keyboard controls.</p>
@@ -67,7 +67,7 @@
       <guid>http://constraint.systems/tools_content/stamp/</guid>
       <description>
         <div>
-          <a href="https://stamp.constraint.systems"><img style="display: block; max-width: 100%;" src="https://stamp.constraint.systems/public/stamp.gif"/></a>
+          <a href="https://stamp.constraint.systems"><img style="display: block; max-width: 100%;" src="stamp.png"/></a>
         </div>
         <div><a href="https://stamp.constraint.systems">Stamp</a></div>
         <p>Image-paint from a source image palette using keyboard controls.</p>
@@ -83,7 +83,7 @@
       <guid>http://constraint.systems/tools_content/collapse/</guid>
       <description>
         <div>
-          <a href="https://collapse.constraint.systems"><img style="display: block; max-width: 100%;" src="https://collapse.constraint.systems/collapse.gif"/></a>
+          <a href="https://collapse.constraint.systems"><img style="display: block; max-width: 100%;" src="collapse.png"/></a>
         </div>
         <div><a href="https://collapse.constraint.systems">Collapse</a></div>
         <p>Collapse an image into itself using ranked superpixels.</p>
@@ -99,7 +99,7 @@
       <guid>http://constraint.systems/tools_content/res/</guid>
       <description>
         <div>
-          <a href="https://res.constraint.systems"><img style="display: block; max-width: 100%;" src="https://res.constraint.systems/res.gif"/></a>
+          <a href="https://res.constraint.systems"><img style="display: block; max-width: 100%;" src="res.png"/></a>
         </div>
         <div><a href="https://res.constraint.systems">Res</a></div>
         <p>Selectively pixelate an image using a compression algorithm.</p>
@@ -115,7 +115,7 @@
       <guid>http://constraint.systems/tools_content/rgb/</guid>
       <description>
         <div>
-          <a href="https://rgb.constraint.systems"><img style="display: block; max-width: 100%;" src="https://rgb.constraint.systems/rgb.gif"/></a>
+          <a href="https://rgb.constraint.systems"><img style="display: block; max-width: 100%;" src="rgb.png"/></a>
         </div>
         <div><a href="https://rgb.constraint.systems">Rgb</a></div>
         <p>Pixel-paint using keyboard controls.</p>
@@ -131,7 +131,7 @@
       <guid>http://constraint.systems/tools_content/face/</guid>
       <description>
         <div>
-          <a href="https://face.constraint.systems"><img style="display: block; max-width: 100%;" src="https://face.constraint.systems/facelong.gif"/></a>
+          <a href="https://face.constraint.systems"><img style="display: block; max-width: 100%;" src="face.png"/></a>
         </div>
         <div><a href="https://face.constraint.systems">Face</a></div>
         <p>Edit both the text and the font it is rendered in.</p>
@@ -147,7 +147,7 @@
       <guid>http://constraint.systems/tools_content/pal/</guid>
       <description>
         <div>
-          <a href="https://pal.constraint.systems"><img style="display: block; max-width: 100%;" src="https://pal.constraint.systems/pal.gif"/></a>
+          <a href="https://pal.constraint.systems"><img style="display: block; max-width: 100%;" src="pal.png"/></a>
         </div>
         <div><a href="https://pal.constraint.systems">Pal</a></div>
         <p>Apply an eight-color terminal color scheme to an image. Use the keyboard controls to choose a theme, set thresholds, and cycle hues.</p>
@@ -163,7 +163,7 @@
       <guid>http://constraint.systems/tools_content/bix/</guid>
       <description>
         <div>
-          <a href="https://bix.constraint.systems"><img style="display: block; max-width: 100%;" src="https://bix.constraint.systems/bix.gif"/></a>
+          <a href="https://bix.constraint.systems"><img style="display: block; max-width: 100%;" src="bix.png"/></a>
         </div>
         <div><a href="https://bix.constraint.systems">Bix</a></div>
         <p>Draw on binary to glitch text.</p>
@@ -179,7 +179,7 @@
       <guid>http://constraint.systems/tools_content/diptych/</guid>
       <description>
         <div>
-          <a href="https://diptych.constraint.systems"><img style="display: block; max-width: 100%;" src="https://diptych.constraint.systems/diptych.gif"/></a>
+          <a href="https://diptych.constraint.systems"><img style="display: block; max-width: 100%;" src="diptych.png"/></a>
         </div>
         <div><a href="https://diptych.constraint.systems">Diptych</a></div>
         <p>Pixel-reflow an image to match the dimensions of your text. Save the result as a diptych.</p>
@@ -195,7 +195,7 @@
       <guid>http://constraint.systems/tools_content/slide/</guid>
       <description>
         <div>
-          <a href="https://slide.constraint.systems"><img style="display: block; max-width: 100%;" src="https://slide.constraint.systems/slide.gif"/></a>
+          <a href="https://slide.constraint.systems"><img style="display: block; max-width: 100%;" src="slide.png"/></a>
         </div>
         <div><a href="https://slide.constraint.systems">Slide</a></div>
         <p>Divide and slide-stretch an image using keyboard controls.</p>
@@ -211,7 +211,7 @@
       <guid>http://constraint.systems/tools_content/freeconfig/</guid>
       <description>
         <div>
-          <a href="https://freeconfig.constraint.systems"><img style="display: block; max-width: 100%;" src="https://freeconfig.constraint.systems/static/freeconfig.gif"/></a>
+          <a href="https://freeconfig.constraint.systems"><img style="display: block; max-width: 100%;" src="freeconfig.png"/></a>
         </div>
         <div><a href="https://freeconfig.constraint.systems">Freeconfig</a></div>
         <p>Push around image pixels in blocks.</p>
@@ -227,7 +227,7 @@
       <guid>http://constraint.systems/tools_content/moire/</guid>
       <description>
         <div>
-          <a href="https://moire.constraint.systems"><img style="display: block; max-width: 100%;" src="https://moire.constraint.systems/static/moire.gif"/></a>
+          <a href="https://moire.constraint.systems"><img style="display: block; max-width: 100%;" src="moire.png"/></a>
         </div>
         <div><a href="https://moire.constraint.systems">Moire</a></div>
         <p>Generate angular skyscapes using Asteroids-like ship controls.</p>
@@ -243,7 +243,7 @@
       <guid>http://constraint.systems/tools_content/hex/</guid>
       <description>
         <div>
-          <a href="https://hex.constraint.systems"><img style="display: block; max-width: 100%;" src="https://hex.constraint.systems/static/share.gif"/></a>
+          <a href="https://hex.constraint.systems"><img style="display: block; max-width: 100%;" src="hex.png"/></a>
         </div>
         <div><a href="https://hex.constraint.systems">Hex</a></div>
         <p>A keyboard-driven, grid-based drawing tool.</p>
@@ -259,7 +259,7 @@
       <guid>http://constraint.systems/tools_content/etch/</guid>
       <description>
         <div>
-          <a href="https://etch.constraint.systems"><img style="display: block; max-width: 100%;" src="https://etch.constraint.systems/static/share.gif"/></a>
+          <a href="https://etch.constraint.systems"><img style="display: block; max-width: 100%;" src="etch.png"/></a>
         </div>
         <div><a href="https://etch.constraint.systems">Etch</a></div>
         <p>A keyboard-based pixel drawing tool.</p>

@@ -11,189 +11,496 @@
     <link rel="stylesheet" type="text/css" href="/font.css" />
     <link rel="stylesheet" type="text/css" href="/style.css" />
     
-
-
-<title>Constraint Systems</title>
-<meta property="description" content="Alternative interfaces for editing and creating images and text.">
-<meta property="og:title" content="Constraint Systems">
-<meta property="og:description" content="Alternative interfaces for editing and creating images and text.">
-<meta property="og:image" content="http://constraint.systems/collage.png">
-<meta property="og:url" content="http://constraint.systems/">
-<meta property="twitter:card" content="summary_large_image">
-<link rel="alternate" type="application/rss+xml" href="http://constraint.systems/rss.xml" title="Constraint Systems" />
+  <script type="text/javascript">
+    <!--
+    if (window.innerWidth < 800) {
+      document.location = "/mobile";
+    }
+    
+  </script>
+  
+  
+  <title>Constraint Systems</title>
+  <meta property="description" content="Alternative interfaces for editing and creating images and text." />
+  <meta property="og:title" content="Constraint Systems" />
+  <meta property="og:description" content="Alternative interfaces for editing and creating images and text." />
+  <meta property="og:image" content="http://constraint.systems/desktop.png" />
+  <meta property="og:url" content="http://constraint.systems/" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <link rel="alternate" type="application/rss+xml" href="http://constraint.systems/rss.xml" title="Constraint Systems" />
+  <script src="/desktop.js"></script>
 
   </head>
   <body>
     <div class="background">
       
-<div style="background: #222; color: #ddd;">
-  <div class="container">
-    <div>Constraint Systems&nbsp; Tools&nbsp; <a href="/gallery/">Gallery</a></div>
+  <div id="screen">
+    <div id="screen-back-top" class="py2 pxs">
+      <div>
+        <div id="logo">
+          Constraint
+          <div style="position: absolute; left: 36px; top: 22px">Systems</div>
+        </div>
+      </div>
+      <div style="display: flex; justify-items: center;">
+        <strong id="preview-count"></strong>
+        <div
+          id="clear-button"
+          class="button button-preview"
+          role="button"
+          style="margin-right: 8px;"
+        >
+          Clear
+        </div>
+        <div id="about-button" class="button button-preview" role="button">
+          About
+        </div>
+      </div>
+    </div>
+    <div id="screen-back-bottom" class="py2 pxs">
+      <div>
+        <strong id="tagline">Loading...</strong>
+      </div>
+      <div id="footer-links">
+        <a href="https://twitter.com/constraint_sys" target="_blank">Twitter</a
+        ><a href="https://github.com/constraint-systems" target="_blank"
+          >Github</a
+        ><a href="https://constraint.systems/rss.xml" target="_blank">RSS</a>
+      </div>
+    </div>
   </div>
+
+  <div id="sidebar">
+    <div id="tools-header" class="py1 pxs">
+      <div>
+        <strong>Tools</strong>
+      </div>
+      <div>
+        (16)
+      </div>
+    </div>
+    <div>
+      
+        <div
+          class="thumbnail pys pxs"
+          data-title="Sift"
+          data-gif="/images/tool_gifs/sift.gif"
+          data-gif-aspect="1.7777777777777777"
+          data-url="https://sift.constraint.systems"
+        >
+          <div>
+            <img src="/images/tool_imgs/sift.png" />
+          </div>
+          <div><strong>Sift</strong></div>
+          <div><p>Slice an image into multiple layers. You can offset the slices to create interference patterns and pseudo-3D effects.</p>
 </div>
-
-
-<div class="spacer"></div>
-<div class="container">
-<div>Tools</div>
-<div><p>Alternative interfaces for creating and editing images and text.</p></div>
-<div class="spacer"></div>
-<div id="link-grid">
-
-  <div class="tool-link">
-  <div><a href="https://sift.constraint.systems"><img src="http://sift.constraint.systems/sift.gif" /></a></div>
-  <div><a href="https://sift.constraint.systems">Sift</a></div>
-  <div><p>Sift slices an image into multiple layers. You can offset the slices to create interference patterns and pseudo-3D effects.</p>
+          <div class="thumbnail-button-holder">
+            <div class="button thumbnail-button button-preview" role="button">
+              Preview
+            </div>
+            <a
+              href="https://sift.constraint.systems"
+              class="thumbnail-button button button-launch"
+              target="_blank"
+              >Launch</a
+            >
+          </div>
+        </div>
+      
+        <div
+          class="thumbnail pys pxs"
+          data-title="Automadraw"
+          data-gif="/images/tool_gifs/automadraw.gif"
+          data-gif-aspect="1.6494845360824741"
+          data-url="https://automadraw.constraint.systems"
+        >
+          <div>
+            <img src="/images/tool_imgs/automadraw.png" />
+          </div>
+          <div><strong>Automadraw</strong></div>
+          <div><p>Draw and evolve your drawing using cellular automata on a pixel grid with two keyboard-controlled cursors.</p>
 </div>
+          <div class="thumbnail-button-holder">
+            <div class="button thumbnail-button button-preview" role="button">
+              Preview
+            </div>
+            <a
+              href="https://automadraw.constraint.systems"
+              class="thumbnail-button button button-launch"
+              target="_blank"
+              >Launch</a
+            >
+          </div>
+        </div>
+      
+        <div
+          class="thumbnail pys pxs"
+          data-title="Span"
+          data-gif="/images/tool_gifs/span.gif"
+          data-gif-aspect="0.9888751545117429"
+          data-url="https://span.constraint.systems"
+        >
+          <div>
+            <img src="/images/tool_imgs/span.png" />
+          </div>
+          <div><strong>Span</strong></div>
+          <div><p>Lay out and rearrange text, line by line, using keyboard controls.</p>
 </div>
-
-
-
-  <div class="tool-link">
-  <div><a href="https://automadraw.constraint.systems"><img src="http://automadraw.constraint.systems/automadraw.gif" /></a></div>
-  <div><a href="https://automadraw.constraint.systems">Automadraw</a></div>
-  <div><p>Draw and evolve your drawing using cellular automata on a pixel grid with two keyboard-controlled cursors.</p>
+          <div class="thumbnail-button-holder">
+            <div class="button thumbnail-button button-preview" role="button">
+              Preview
+            </div>
+            <a
+              href="https://span.constraint.systems"
+              class="thumbnail-button button button-launch"
+              target="_blank"
+              >Launch</a
+            >
+          </div>
+        </div>
+      
+        <div
+          class="thumbnail pys pxs"
+          data-title="Stamp"
+          data-gif="/images/tool_gifs/stamp.gif"
+          data-gif-aspect="0.9477434679334917"
+          data-url="https://stamp.constraint.systems"
+        >
+          <div>
+            <img src="/images/tool_imgs/stamp.png" />
+          </div>
+          <div><strong>Stamp</strong></div>
+          <div><p>Image-paint from a source image palette using keyboard controls.</p>
 </div>
+          <div class="thumbnail-button-holder">
+            <div class="button thumbnail-button button-preview" role="button">
+              Preview
+            </div>
+            <a
+              href="https://stamp.constraint.systems"
+              class="thumbnail-button button button-launch"
+              target="_blank"
+              >Launch</a
+            >
+          </div>
+        </div>
+      
+        <div
+          class="thumbnail pys pxs"
+          data-title="Collapse"
+          data-gif="/images/tool_gifs/collapse.gif"
+          data-gif-aspect="1.391812865497076"
+          data-url="https://collapse.constraint.systems"
+        >
+          <div>
+            <img src="/images/tool_imgs/collapse.png" />
+          </div>
+          <div><strong>Collapse</strong></div>
+          <div><p>Collapse an image into itself using ranked superpixels.</p>
 </div>
-
-
-
-  <div class="tool-link">
-  <div><a href="https://span.constraint.systems"><img src="https://span.constraint.systems/span.gif" /></a></div>
-  <div><a href="https://span.constraint.systems">Span</a></div>
-  <div><p>Lay out and rearrange text, line by line, using keyboard controls.</p>
+          <div class="thumbnail-button-holder">
+            <div class="button thumbnail-button button-preview" role="button">
+              Preview
+            </div>
+            <a
+              href="https://collapse.constraint.systems"
+              class="thumbnail-button button button-launch"
+              target="_blank"
+              >Launch</a
+            >
+          </div>
+        </div>
+      
+        <div
+          class="thumbnail pys pxs"
+          data-title="Res"
+          data-gif="/images/tool_gifs/res.gif"
+          data-gif-aspect="1.1516587677725119"
+          data-url="https://res.constraint.systems"
+        >
+          <div>
+            <img src="/images/tool_imgs/res.png" />
+          </div>
+          <div><strong>Res</strong></div>
+          <div><p>Selectively pixelate an image using a compression algorithm.</p>
 </div>
+          <div class="thumbnail-button-holder">
+            <div class="button thumbnail-button button-preview" role="button">
+              Preview
+            </div>
+            <a
+              href="https://res.constraint.systems"
+              class="thumbnail-button button button-launch"
+              target="_blank"
+              >Launch</a
+            >
+          </div>
+        </div>
+      
+        <div
+          class="thumbnail pys pxs"
+          data-title="Rgb"
+          data-gif="/images/tool_gifs/rgb.gif"
+          data-gif-aspect="1.342327150084317"
+          data-url="https://rgb.constraint.systems"
+        >
+          <div>
+            <img src="/images/tool_imgs/rgb.png" />
+          </div>
+          <div><strong>Rgb</strong></div>
+          <div><p>Pixel-paint using keyboard controls.</p>
 </div>
-
-
-
-  <div class="tool-link">
-  <div><a href="https://stamp.constraint.systems"><img src="https://stamp.constraint.systems/public/stamp.gif" /></a></div>
-  <div><a href="https://stamp.constraint.systems">Stamp</a></div>
-  <div><p>Image-paint from a source image palette using keyboard controls.</p>
+          <div class="thumbnail-button-holder">
+            <div class="button thumbnail-button button-preview" role="button">
+              Preview
+            </div>
+            <a
+              href="https://rgb.constraint.systems"
+              class="thumbnail-button button button-launch"
+              target="_blank"
+              >Launch</a
+            >
+          </div>
+        </div>
+      
+        <div
+          class="thumbnail pys pxs"
+          data-title="Face"
+          data-gif="/images/tool_gifs/facelong.gif"
+          data-gif-aspect="1.1147859922178989"
+          data-url="https://face.constraint.systems"
+        >
+          <div>
+            <img src="/images/tool_imgs/face.png" />
+          </div>
+          <div><strong>Face</strong></div>
+          <div><p>Edit both the text and the font it is rendered in.</p>
 </div>
+          <div class="thumbnail-button-holder">
+            <div class="button thumbnail-button button-preview" role="button">
+              Preview
+            </div>
+            <a
+              href="https://face.constraint.systems"
+              class="thumbnail-button button button-launch"
+              target="_blank"
+              >Launch</a
+            >
+          </div>
+        </div>
+      
+        <div
+          class="thumbnail pys pxs"
+          data-title="Pal"
+          data-gif="/images/tool_gifs/pal.gif"
+          data-gif-aspect="1.8018018018018018"
+          data-url="https://pal.constraint.systems"
+        >
+          <div>
+            <img src="/images/tool_imgs/pal.png" />
+          </div>
+          <div><strong>Pal</strong></div>
+          <div><p>Apply an eight-color terminal color scheme to an image. Use the keyboard controls to choose a theme, set thresholds, and cycle hues.</p>
 </div>
-
-
-
-  <div class="tool-link">
-  <div><a href="https://collapse.constraint.systems"><img src="https://collapse.constraint.systems/collapse.gif" /></a></div>
-  <div><a href="https://collapse.constraint.systems">Collapse</a></div>
-  <div><p>Collapse an image into itself using ranked superpixels.</p>
+          <div class="thumbnail-button-holder">
+            <div class="button thumbnail-button button-preview" role="button">
+              Preview
+            </div>
+            <a
+              href="https://pal.constraint.systems"
+              class="thumbnail-button button button-launch"
+              target="_blank"
+              >Launch</a
+            >
+          </div>
+        </div>
+      
+        <div
+          class="thumbnail pys pxs"
+          data-title="Bix"
+          data-gif="/images/tool_gifs/bix.gif"
+          data-gif-aspect="1.817767653758542"
+          data-url="https://bix.constraint.systems"
+        >
+          <div>
+            <img src="/images/tool_imgs/bix.png" />
+          </div>
+          <div><strong>Bix</strong></div>
+          <div><p>Draw on binary to glitch text.</p>
 </div>
+          <div class="thumbnail-button-holder">
+            <div class="button thumbnail-button button-preview" role="button">
+              Preview
+            </div>
+            <a
+              href="https://bix.constraint.systems"
+              class="thumbnail-button button button-launch"
+              target="_blank"
+              >Launch</a
+            >
+          </div>
+        </div>
+      
+        <div
+          class="thumbnail pys pxs"
+          data-title="Diptych"
+          data-gif="/images/tool_gifs/diptych.gif"
+          data-gif-aspect="1.7637969094922736"
+          data-url="https://diptych.constraint.systems"
+        >
+          <div>
+            <img src="/images/tool_imgs/diptych.png" />
+          </div>
+          <div><strong>Diptych</strong></div>
+          <div><p>Pixel-reflow an image to match the dimensions of your text. Save the result as a diptych.</p>
 </div>
-
-
-
-  <div class="tool-link">
-  <div><a href="https://res.constraint.systems"><img src="https://res.constraint.systems/res.gif" /></a></div>
-  <div><a href="https://res.constraint.systems">Res</a></div>
-  <div><p>Selectively pixelate an image using a compression algorithm.</p>
+          <div class="thumbnail-button-holder">
+            <div class="button thumbnail-button button-preview" role="button">
+              Preview
+            </div>
+            <a
+              href="https://diptych.constraint.systems"
+              class="thumbnail-button button button-launch"
+              target="_blank"
+              >Launch</a
+            >
+          </div>
+        </div>
+      
+        <div
+          class="thumbnail pys pxs"
+          data-title="Slide"
+          data-gif="/images/tool_gifs/slide.gif"
+          data-gif-aspect="1.7637969094922736"
+          data-url="https://slide.constraint.systems"
+        >
+          <div>
+            <img src="/images/tool_imgs/slide.png" />
+          </div>
+          <div><strong>Slide</strong></div>
+          <div><p>Divide and slide-stretch an image using keyboard controls.</p>
 </div>
+          <div class="thumbnail-button-holder">
+            <div class="button thumbnail-button button-preview" role="button">
+              Preview
+            </div>
+            <a
+              href="https://slide.constraint.systems"
+              class="thumbnail-button button button-launch"
+              target="_blank"
+              >Launch</a
+            >
+          </div>
+        </div>
+      
+        <div
+          class="thumbnail pys pxs"
+          data-title="Freeconfig"
+          data-gif="/images/tool_gifs/freeconfig.gif"
+          data-gif-aspect="1.7637969094922736"
+          data-url="https://freeconfig.constraint.systems"
+        >
+          <div>
+            <img src="/images/tool_imgs/freeconfig.png" />
+          </div>
+          <div><strong>Freeconfig</strong></div>
+          <div><p>Push around image pixels in blocks.</p>
 </div>
-
-
-
-  <div class="tool-link">
-  <div><a href="https://rgb.constraint.systems"><img src="https://rgb.constraint.systems/rgb.gif" /></a></div>
-  <div><a href="https://rgb.constraint.systems">Rgb</a></div>
-  <div><p>Pixel-paint using keyboard controls.</p>
+          <div class="thumbnail-button-holder">
+            <div class="button thumbnail-button button-preview" role="button">
+              Preview
+            </div>
+            <a
+              href="https://freeconfig.constraint.systems"
+              class="thumbnail-button button button-launch"
+              target="_blank"
+              >Launch</a
+            >
+          </div>
+        </div>
+      
+        <div
+          class="thumbnail pys pxs"
+          data-title="Moire"
+          data-gif="/images/tool_gifs/moire.gif"
+          data-gif-aspect="1.7637969094922736"
+          data-url="https://moire.constraint.systems"
+        >
+          <div>
+            <img src="/images/tool_imgs/moire.png" />
+          </div>
+          <div><strong>Moire</strong></div>
+          <div><p>Generate angular skyscapes using Asteroids-like ship controls.</p>
 </div>
+          <div class="thumbnail-button-holder">
+            <div class="button thumbnail-button button-preview" role="button">
+              Preview
+            </div>
+            <a
+              href="https://moire.constraint.systems"
+              class="thumbnail-button button button-launch"
+              target="_blank"
+              >Launch</a
+            >
+          </div>
+        </div>
+      
+        <div
+          class="thumbnail pys pxs"
+          data-title="Hex"
+          data-gif="/images/tool_gifs/hex.gif"
+          data-gif-aspect="1.7371638141809291"
+          data-url="https://hex.constraint.systems"
+        >
+          <div>
+            <img src="/images/tool_imgs/hex.png" />
+          </div>
+          <div><strong>Hex</strong></div>
+          <div><p>A keyboard-driven, grid-based drawing tool.</p>
 </div>
-
-
-
-  <div class="tool-link">
-  <div><a href="https://face.constraint.systems"><img src="https://face.constraint.systems/facelong.gif" /></a></div>
-  <div><a href="https://face.constraint.systems">Face</a></div>
-  <div><p>Edit both the text and the font it is rendered in.</p>
+          <div class="thumbnail-button-holder">
+            <div class="button thumbnail-button button-preview" role="button">
+              Preview
+            </div>
+            <a
+              href="https://hex.constraint.systems"
+              class="thumbnail-button button button-launch"
+              target="_blank"
+              >Launch</a
+            >
+          </div>
+        </div>
+      
+        <div
+          class="thumbnail pys pxs"
+          data-title="Etch"
+          data-gif="/images/tool_gifs/etch.gif"
+          data-gif-aspect="1.9656019656019657"
+          data-url="https://etch.constraint.systems"
+        >
+          <div>
+            <img src="/images/tool_imgs/etch.png" />
+          </div>
+          <div><strong>Etch</strong></div>
+          <div><p>A keyboard-based pixel drawing tool.</p>
 </div>
-</div>
+          <div class="thumbnail-button-holder">
+            <div class="button thumbnail-button button-preview" role="button">
+              Preview
+            </div>
+            <a
+              href="https://etch.constraint.systems"
+              class="thumbnail-button button button-launch"
+              target="_blank"
+              >Launch</a
+            >
+          </div>
+        </div>
+      
+    </div>
+  </div>
 
-
-
-  <div class="tool-link">
-  <div><a href="https://pal.constraint.systems"><img src="https://pal.constraint.systems/pal.gif" /></a></div>
-  <div><a href="https://pal.constraint.systems">Pal</a></div>
-  <div><p>Apply an eight-color terminal color scheme to an image. Use the keyboard controls to choose a theme, set thresholds, and cycle hues.</p>
-</div>
-</div>
-
-
-
-  <div class="tool-link">
-  <div><a href="https://bix.constraint.systems"><img src="https://bix.constraint.systems/bix.gif" /></a></div>
-  <div><a href="https://bix.constraint.systems">Bix</a></div>
-  <div><p>Draw on binary to glitch text.</p>
-</div>
-</div>
-
-
-
-  <div class="tool-link">
-  <div><a href="https://diptych.constraint.systems"><img src="https://diptych.constraint.systems/diptych.gif" /></a></div>
-  <div><a href="https://diptych.constraint.systems">Diptych</a></div>
-  <div><p>Pixel-reflow an image to match the dimensions of your text. Save the result as a diptych.</p>
-</div>
-</div>
-
-
-
-  <div class="tool-link">
-  <div><a href="https://slide.constraint.systems"><img src="https://slide.constraint.systems/slide.gif" /></a></div>
-  <div><a href="https://slide.constraint.systems">Slide</a></div>
-  <div><p>Divide and slide-stretch an image using keyboard controls.</p>
-</div>
-</div>
-
-
-
-  <div class="tool-link">
-  <div><a href="https://freeconfig.constraint.systems"><img src="https://freeconfig.constraint.systems/static/freeconfig.gif" /></a></div>
-  <div><a href="https://freeconfig.constraint.systems">Freeconfig</a></div>
-  <div><p>Push around image pixels in blocks.</p>
-</div>
-</div>
-
-
-
-  <div class="tool-link">
-  <div><a href="https://moire.constraint.systems"><img src="https://moire.constraint.systems/static/moire.gif" /></a></div>
-  <div><a href="https://moire.constraint.systems">Moire</a></div>
-  <div><p>Generate angular skyscapes using Asteroids-like ship controls.</p>
-</div>
-</div>
-
-
-
-  <div class="tool-link">
-  <div><a href="https://hex.constraint.systems"><img src="https://hex.constraint.systems/static/share.gif" /></a></div>
-  <div><a href="https://hex.constraint.systems">Hex</a></div>
-  <div><p>A keyboard-driven, grid-based drawing tool.</p>
-</div>
-</div>
-
-
-
-  <div class="tool-link">
-  <div><a href="https://etch.constraint.systems"><img src="https://etch.constraint.systems/static/share.gif" /></a></div>
-  <div><a href="https://etch.constraint.systems">Etch</a></div>
-  <div><p>A keyboard-based pixel drawing tool.</p>
-</div>
-</div>
-
-
-
-</div>
-<div class="spacer"></div>
-</div>
-<div class="spacer"></div>
-<div class="container">
-  <a href="https://github.com/constraint-systems/index">View source</a>  <a href="https://twitter.com/constraint_sys">Twitter</a>  <a href="/rss/">RSS</a>
-</div>
-<div class="spacer"></div>
-
-
+  <a class="button" href="/mobile" id="mobile-link">Go to mobile</a>
 
     </div>
   </body>
