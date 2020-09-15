@@ -20,14 +20,13 @@ fs.readdir('../content/tools_content', (err, files) => {
       if (err) throw err
 
       let content = matter(data)
-      let img_path = '../static/images/tool_gifs/' + content.data.image
+      let img_path = '../static/images/tool_gifs/' + content.data.gif
 
       exec(`convert ${img_path} -print "%w,%h\n" /dev/null`, (err, stdout) => {
         if (err) {
           console.log(err)
         } else {
           let dims = stdout.split(',').map(v => parseInt(v))
-          delete content.data.image_resolution
           content.data.aspect_ratio = dims[0] / dims[1]
           let new_content = content.stringify()
           fs.writeFile(
