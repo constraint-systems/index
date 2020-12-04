@@ -42,32 +42,40 @@ a {
 
 /* Fonts */
 html {
-  font-family: 'avara-custom', serif;
+  font-family: sans-serif;
+  /* font-family: 'avara-custom', serif; */
+  font-family: 'karrik-custom', sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 22px;
+  background: #222;
+  color: #ccc;
 }
 strong {
+  font-family: sans-serif;
+  font-weight: 400;
   font-family: 'karrik-custom', sans-serif;
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 24px;
+  color: white;
 }
 .button {
+  font-family: inherit;
+  font-size: inherit;
   display: inline-block;
-  border: solid 1px black;
-  font-family: 'karrik-custom', sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  text-decoration: none;
-  height: 24px;
-  line-height: 20px;
+  font-weight: 400;
+  text-decoration: underline;
   cursor: pointer;
-  padding-left: 12px;
-  padding-right: 12px;
-  user-select: none;
+  color: white;
+  color: #eee;
 }
 .button:hover {
   background: rgba(0, 0, 0, 0.1);
+}
+
+.grid-item {
+  outline: solid 2px #666;
+  position: relative;
+}
+.grid-item {
+  /* background: #111; */
 }
 
 /* Padding */
@@ -128,183 +136,4 @@ strong {
 .spacer3 {
   width: 100%;
   height: var(--p3);
-}
-
-/* Layout */
-#screen {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: calc(100% - var(--sidebar-width));
-  height: 100vh;
-  user-select: none;
-}
-#sidebar {
-  width: var(--sidebar-width);
-  margin-left: calc(100% - var(--sidebar-width));
-}
-
-/* Styling */
-html {
-  background: #ccc;
-}
-
-/* Screen styling */
-#screen {
-  background: #aaa;
-  z-index: 999;
-}
-#screen-back-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-#screen-back-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-}
-#logo {
-  position: relative;
-  font-size: 18px;
-}
-#tagline {
-  user-select: none;
-  cursor: pointer;
-  line-height: 24px;
-}
-#preview-count {
-  display: block;
-  font-size: 15px;
-  height: 24px;
-  line-height: 20px;
-  margin-right: 8px;
-}
-#footer-links {
-  display: flex;
-}
-#footer-links a {
-  margin-left: 8px;
-}
-
-/* Sidebar Styling */
-#sidebar {
-  border-left: solid 2px #222;
-}
-#tools-header {
-  background: #ccc;
-  position: sticky;
-  top: 0;
-  border-bottom: solid 2px #222;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  line-height: 28px;
-  align-items: center;
-}
-.thumbnail {
-  border-bottom: solid 1px #222;
-}
-.thumbnail img {
-  cursor: pointer;
-  margin-bottom: 8px;
-}
-.thumbnail-button-holder {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 8px;
-  margin-top: 8px;
-}
-.thumbnail-button {
-  display: block;
-  text-align: center;
-}
-.button-preview {
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
-}
-.button-launch {
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
-}
-.thumbnail.active .button-preview,
-#about-button.active {
-  background: #222;
-  color: #ccc;
-}
-.thumbnail.active .button-preview:hover,
-#about-button.active:hover {
-  background: #444;
-  color: #ddd;
-}
-
-/* Preview Styling */
-.preview-el {
-  outline: solid 2px #222;
-}
-.preview-title {
-  background: #222;
-  color: #ccc;
-  font-family: 'karrik-custom', sans-serif;
-  font-weight: 700;
-  font-size: 11px;
-  line-height: 16px;
-  height: 20px;
-  padding-left: 4px;
-  padding-right: 4px;
-  user-select: none;
-  cursor: grab;
-}
-.preview-close {
-  position: absolute;
-  cursor: pointer;
-  background: #222;
-  color: #ccc;
-  width: 20px;
-  height: 20px;
-  right: 0;
-  top: 0;
-  text-align: center;
-}
-.preview-close:hover {
-  background: #000;
-  color: #fff;
-}
-.about-content {
-  padding: 12px;
-}
-.preview-resize {
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  right: -6px;
-  bottom: -6px;
-  background: transparent;
-  cursor: nwse-resize;
-}
-.preview-el img {
-  cursor: pointer;
-}
-
-/* mobile link */
-#mobile-link {
-  display: none;
-  position: fixed;
-  right: 32px;
-  bottom: 32px;
-  background: #222;
-  color: #ccc;
-}
-@media only screen and (max-width: 799px) {
-  #mobile-link {
-    display: block;
-    z-index: 9999;
-  }
 }
