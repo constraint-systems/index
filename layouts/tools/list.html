@@ -8,31 +8,28 @@
 <meta property="og:image" content="{{ .Site.BaseURL }}collage.png">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="twitter:card" content="summary_large_image">
-
-{{ partial "galleryscript" }}
 {{ end }}
 
 {{ define "main" }}
 {{ partial "header" . }}
-<div style="background: #aaa">
+<div class="measure auto p3">
   <div class="container">
     {{ "[Gallery](/gallery)" | markdownify }} Tool
   </div>
-</div>
-<div class="container">
+  <div class="spacer3"></div>
   {{ with .Site.GetPage (printf "/tools_content/%s.md" (lower .Name)) }} 
-      <div class="spacer"></div>
         <div>{{ .Title }}</div>
         <div>{{ .Content }}</div>
         <div><p>{{ .Params.link | markdownify }}</p></div>
   {{ end }}
-  <div class="spacer"></div>
+  <div class="spacer3"></div>
+  <div class="spacer2"></div>
   <div id="link-grid">
     {{ range .Pages }}
     {{ partial "post_link" . }}
     {{ end }}
   </div>
   <div class="spacer"></div>
-</div>
 {{ partial "footer" . }}
+</div>
 {{ end }}

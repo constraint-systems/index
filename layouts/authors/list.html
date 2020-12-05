@@ -8,32 +8,28 @@
 <meta property="og:image" content="{{ .Site.BaseURL }}collage.png">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="twitter:card" content="summary_large_image">
-
-{{ partial "galleryscript" }}
 {{ end }}
 
 {{ define "main" }}
 {{ partial "header" . }}
-<div style="background: #aaa">
-  <div class="container">
-    {{ "[Gallery](/gallery)" | markdownify }} Author
+<div class="measure auto p3">
+  <div>
+    {{ "[Gallery](/gallery)" | markdownify }}&nbsp; Author
   </div>
-</div>
-<div class="container">
-  <div class="spacer"></div>
+  <div class="spacer3"></div>
   <div>
     <div>{{ .Title}}</div>
     <div><p>{{ .Params.link | markdownify }}</p></div>
   </div>
-  <div class="spacer"></div>
+  <div class="spacer3"></div>
+  <div class="spacer2"></div>
   <div id="link-grid">
     {{ range .Pages }}
       {{ partial "post_link" . }}
     {{ end }}
   </div>
-  <div class="spacer"></div>
+  {{ partial "footer" . }}
 </div>
-{{ partial "footer" . }}
 {{ end }}
  
 

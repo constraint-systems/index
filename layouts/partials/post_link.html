@@ -1,37 +1,38 @@
-<div class="post item">
+<div class="post item mb3">
   <div class="content">
-  <div>{{ .Date.Format "2006.01.02" }}</div>
-  <div>
-    <a href="{{ .RelPermalink }}"><div></div><img src="/images/{{ .Params.Image }}" /></a>
-  </div>
-  <div><p>{{ .Content }}</p></div>
-  {{ if isset .Params "source" }}
-  <div><p>Source: {{ .Params.source | markdownify }}</p></div>
-  {{ end }}
-  <div><p>
-      {{ $taxo := "authors" }}
+    <div class="mb2">{{ .Date.Format "2006-01-02" }}</div>
+    <div class="mb2">
+      <a href="{{ .RelPermalink }}"><div></div><img src="/images/{{ .Params.Image }}" /></a>
+    </div>
+    <div><p>{{ .Content }}</p></div>
+    {{ if isset .Params "source" }}
+    <div><p>Source: {{ .Params.source | markdownify }}</p></div>
+    {{ end }}
+    <div><p>
+        {{ $taxo := "authors" }}
+        {{ with .Param $taxo }}
+        By
+        {{ range $index, $director := . }}
+        {{- if gt $index 0 }}, {{ end -}}
+        {{ with $.Site.GetPage (printf "/%s/%s" $taxo $director) -}}
+        <a href="{{ .Permalink }}">{{ $director }}</a>
+        {{- end -}}
+        {{- end -}}
+        {{ end }}
+      </p></div>
+    <div><p>
+      {{ $taxo := "tools" }}
       {{ with .Param $taxo }}
-      By
+      Using
       {{ range $index, $director := . }}
-      {{- if gt $index 0 }}, {{ end -}}
-      {{ with $.Site.GetPage (printf "/%s/%s" $taxo $director) -}}
-      <a href="{{ .Permalink }}">{{ $director }}</a>
-      {{- end -}}
+          {{- if gt $index 0 }}, {{ end -}}
+            {{ with $.Site.GetPage (printf "/%s/%s" $taxo $director) -}}
+            <a href="{{ .Permalink }}">{{ $director }}</a>
+          {{- end -}}
       {{- end -}}
       {{ end }}
-    </p></div>
-  <div><p>
-    {{ $taxo := "tools" }}
-    {{ with .Param $taxo }}
-    Using
-    {{ range $index, $director := . }}
-        {{- if gt $index 0 }}, {{ end -}}
-          {{ with $.Site.GetPage (printf "/%s/%s" $taxo $director) -}}
-          <a href="{{ .Permalink }}">{{ $director }}</a>
-        {{- end -}}
-    {{- end -}}
-    {{ end }}
-    </p></div>
+      </p></div>
   </div>
 </div>
- 
+<div class="spacer3"></div>
+<div class="spacer3"></div>

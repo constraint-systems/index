@@ -8,16 +8,11 @@
 <meta property="og:image" content="{{ .Site.BaseURL }}collage.png">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="twitter:card" content="summary_large_image">
-{{ partial "galleryscript" }}
 {{ end }}
 
 {{ define "main" }}
 {{ partial "header" . }}
-<div class="spacer"></div>
-<div class="container">
-<div>Gallery</div>
-<div><p>{{ "Work created using the [Constraint Systems tools](/)." | markdownify }}</p></div>
-<div class="spacer"></div>
+<div class="measure auto p3">
 <div>Filter posts by</div>
 <div><p>Tool: 
     {{ $tool_counter := 0 }}
@@ -35,12 +30,14 @@
     {{- $author_counter = add $author_counter 1 -}}
     {{ end }}
   </p></div>
-<div class="spacer"></div>
+
+<div class="spacer3"></div>
+<div class="spacer2"></div>
  <div id="link-grid">
     {{ range where .Site.RegularPages "Section" "gallery" }}
       {{ partial "post_link" . }}
     {{ end }}
   </div>
+  {{ partial "footer" . }}
 </div>
-{{ partial "footer" . }}
 {{ end }}
