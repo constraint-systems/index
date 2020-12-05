@@ -15,66 +15,67 @@
 {{ end }}
 
 {{ define "main" }}
-{{ $tools := where .Site.RegularPages "Section" "tools_content" }}
-<div style="padding: 16px; max-width: 64ch; margin: 0 auto; text-align: center;">
-   <div style="font-size: 24px; line-height: 24px; margin-bottom: 6px;"><strong>Constraint Systems</strong></div>
-   <div>{{ len $tools }} alternative interfaces for creating and editing images and text</div>
+  {{ $tools := where .Site.RegularPages "Section" "tools_content" }}
+  <div class="p3 auto center">
+    <div class="big-text mb2"><strong>Constraint Systems</strong></div>
+    <div>{{ len $tools }} alternative interfaces for creating and editing images and text.</div>
   </div>
 
-   <div
-     style="
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-        grid-auto-rows: 20rem;
-        padding: 1px;
-      ">
-      {{ range $tools }}
-      <div style="padding: 1px; height: 20rem;"
-           class="thumbnail"
-           data-title="{{ .Title }}"
-           data-gif="/images/tool_gifs/{{ .Params.gif }}"
-           data-url="{{ .Params.link }}"
-           data-description="{{ .Content }}"
-        >
-        <div class="grid-item" style="padding: 12px 16px; display: flex; flex-direction: column; height: 100%;">
-          <div style="font-size: 26px; line-height: 26px; padding-bottom: 12px; text-align: center;"><strong>{{ .Title }}</strong></div>
-          <div class="img" style="flex-grow: 1; background-image: url(/images/tool_imgs/{{ .Params.image }}); background-size: contain; background-repeat: no-repeat; background-position: center center; cursor: pointer;"></div>
-          <div style="padding-top: 14px;">{{ .Content }}</div>
-          <div class="thumbnail-button-holder" style="padding-top: 6px; display: flex; justify-content: space-between;">
-            <div class="button thumbnail-button button-preview" role="button">
-              Preview
-            </div>
-            <a
-              href="{{ .Params.link }}"
-              class="thumbnail-button button button-launch"
-              target="_blank"
-              >Launch</a
-            >
+  <div
+   style="
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+      grid-auto-rows: 20rem;
+      padding: 1px;
+  ">
+    {{ range $tools }}
+      <div 
+        class="thumbnail"
+        style="padding: 1px; height: 20rem;"
+        data-title="{{ .Title }}"
+        data-gif="/images/tool_gifs/{{ .Params.gif }}"
+        data-url="{{ .Params.link }}"
+        data-description="{{ .Content }}"
+      >
+      <div class="grid-item p3 flex-column" style="height: 100%;">
+        <div class="big-text mb2 center"><strong>{{ .Title }}</strong></div>
+        <div class="spacer1"></div>
+        <div class="img background-contain pointer mb3" style="flex-grow: 1; background-image: url(/images/tool_imgs/{{ .Params.image }});"></div>
+        <div class="mb1">{{ .Content }}</div>
+        <div class="thumbnail-button-holder flex-between">
+          <div class="button thumbnail-button button-preview" role="button">
+            Preview
           </div>
-       </div>
-      </div>
-      {{ end }}
+          <a
+            href="{{ .Params.link }}"
+            class="thumbnail-button button button-launch"
+            target="_blank"
+            >Launch</a
+          >
+        </div>
+     </div>
     </div>
+    {{ end }}
+  </div>
 
-    <div style="padding: 16px; padding-top: 24px; max-width: 64ch; margin: 0 auto;">
-    <div style="font-size: 24px; line-height: 24px; margin-bottom: 12px;"><strong>About</strong></div>
-    <div style="margin-bottom: 12px;">Constraint Systems is a collection of experimental web-based creative tools. They are an ongoing attempt to explore alternative ways of interacting with pixels and text on a computer screen. I hope to someday build these ideas into something larger, but the plan for now is to keep the scopes small and the releases quick.
-    </div>
+  <div class="p3 measure auto">
+    <div class="spacer2"></div>
+    <div class="big-text mb2"><strong>About</strong></div>
+    <div class="mb2">Constraint Systems is a collection of experimental web-based creative tools. They are an ongoing attempt to explore alternative ways of interacting with pixels and text on a computer screen. I hope to someday build these ideas into something larger, but the plan for now is to keep the scopes small and the releases quick.</div>
+      <div>Questions? Interested in collaborating? Get in touch with <a href="https://grantcuster.com" target="_blank">Grant Custer</a>
+  </div>
 
-    <div style="margin-bottom: 24px;">Questions? Interested in collaborating? Get in touch with <a href="https://grantcuster.com" target="_blank">Grant</a>
-      </div>
-        <div style="text-align: center;">
-     <a href="https://github.com/constraint-systems" target="_blank"
-                                                       >Github</a
-                                                     >&nbsp;
-               <a href="https://twitter.com/constraint_sys" target="_blank">Twitter</a
-                                                 >&nbsp;
-                                                 <a href="https://youtube.com/grantcuster" target="_blank">Youtube</a
-                                                 >&nbsp;
-           <a href="https://constraint.systems/rss.xml" target="_blank">RSS</a>
-    </div>
-    <div style="height: 12px; width: 100%;"></div>
+  <div class="spacer3"></div>
+  <div class="spacer2"></div>
 
-    <div id="preview-holder"></div>
+  <div class="center">
+    <a href="https://github.com/constraint-systems" target="_blank">Github</a>&nbsp;
+    <a href="https://twitter.com/constraint_sys" target="_blank">Twitter</a>&nbsp;
+    <a href="https://youtube.com/grantcuster" target="_blank">Youtube</a>&nbsp;
+    <a href="https://constraint.systems/rss.xml" target="_blank">RSS</a>
+  </div>
 
+  <div class="spacer2"></div>
+
+  <div id="preview-holder"></div>
 {{ end }}

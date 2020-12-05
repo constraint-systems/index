@@ -80,9 +80,9 @@ strong {
 
 /* Padding */
 :root {
-  --p1: 6px;
-  --p2: 12px;
-  --p3: 24px;
+  --p1: 4px;
+  --p2: 8px;
+  --p3: 16px;
 }
 .p1 {
   padding: var(--p1);
@@ -125,6 +125,15 @@ strong {
   padding-top: var(--p3);
   padding-bottom: var(--p3);
 }
+.mb1 {
+  margin-bottom: var(--p1);
+}
+.mb2 {
+  margin-bottom: var(--p2);
+}
+.mb3 {
+  margin-bottom: var(--p3);
+}
 .spacer1 {
   width: 100%;
   height: var(--p1);
@@ -136,4 +145,43 @@ strong {
 .spacer3 {
   width: 100%;
   height: var(--p3);
+}
+
+.flex {
+  display: flex;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.center {
+  text-align: center;
+}
+
+.auto {
+  margin: 0 auto;
+}
+
+.point {
+  cursor: pointer;
+}
+
+.big-text {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.background-contain {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.measure {
+  max-width: 64ch;
 }
