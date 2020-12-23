@@ -1,0 +1,213 @@
+/* Fonts */
+@font-face {
+    font-family: 'avara-custom';
+    src: url('/fonts/avara.woff') format('woff');
+}
+@font-face {
+    font-family: 'karrik-custom';
+    src: url('/fonts/Karrik-Regular.woff') format('woff');
+}
+
+/* Resets */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 20px;
+    line-height: 24px;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    color: #222;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.list-reset {
+    list-style: none; 
+    padding-left: 0;
+}
+
+.sans {
+    font-family: sans-serif; 
+    font-size: 16px;
+    line-height: 20px;
+} 
+.serif-link a {
+    font-family: serif; 
+    font-size: 20px;
+    line-height: 24px;
+}
+.serif {
+    font-family: serif;
+    font-size: 20px;
+    line-height: 24px;
+   
+}
+p {
+    margin: 0;
+}
+
+
+
+div {
+}
+
+.measure {
+    max-width: calc(64ch + 32px);
+}
+
+a {
+    color: inherit;
+    word-break: break-word;
+}
+
+button {
+    display: inline-block;
+    height: 24px;
+}
+
+/* Padding */
+:root {
+    --p1: 4px;
+    --p2: 8px;
+    --p3: 16px;
+}
+.p1 {
+    padding: var(--p1);
+}
+.px1 {
+    padding-left: var(--p1);
+    padding-right: var(--p1);
+}
+.py1 {
+    padding-top: var(--p1);
+    padding-bottom: var(--p1);
+}
+.p2 {
+    padding: var(--p2);
+}
+.px2 {
+    padding-left: var(--p2);
+    padding-right: var(--p2);
+}
+.py2 {
+    padding-top: var(--p2);
+    padding-bottom: var(--p2);
+}
+.p3 {
+    padding: var(--p3);
+}
+.pxs {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.pys {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.px3 {
+    padding-left: var(--p3);
+    padding-right: var(--p3);
+}
+.py3 {
+    padding-top: var(--p3);
+    padding-bottom: var(--p3);
+}
+.mb1 {
+    margin-bottom: var(--p1);
+}
+.mb2 {
+    margin-bottom: var(--p2);
+}
+.mb3 {
+    margin-bottom: var(--p3);
+}
+.mr1 {
+    margin-right: var(--p1);
+}
+.mr2 {
+    margin-right: var(--p2);
+}
+.mr3 {
+    margin-right: var(--p3);
+}
+
+.spacer1 {
+    width: 100%;
+    height: var(--p1);
+}
+.spacer2 {
+    width: 100%;
+    height: var(--p2);
+}
+.spacer3 {
+    width: 100%;
+    height: var(--p3);
+}
+.relative {
+    position: relative;
+}
+
+.grid-holder {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40ch, 1fr));
+    padding-left: 1px;
+    padding-right: 1px;
+    grid-auto-rows: 20rem;
+}
+.grid-item {
+    outline: solid 1px black;
+    background: white;
+    flex-direction: column;
+}
+
+.big-title-text {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: auto;
+}
+.nav-list li {
+    margin-right: 12px;
+}
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.flex {
+    display: flex;
+}
+.space-between {
+    display: flex;
+    justify-content: space-between; 
+}
+
+
+
+super {
+    font-size: 0.8em;
+    position: relative;
+    top: -0.4em;
+}
+
+
+
+.background-contain {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.center {
+    text-align: center;
+}

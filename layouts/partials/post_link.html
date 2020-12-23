@@ -1,14 +1,18 @@
-<div class="post item mb3">
+<div class="spacer3"></div>
+<div class="post item">
   <div class="content">
-    <div class="mb2">{{ .Date.Format "2006-01-02" }}</div>
-    <div class="mb2">
-      <a href="{{ .RelPermalink }}"><div></div><img src="/images/{{ .Params.Image }}" /></a>
+    <div style="display: none;">{{ .Date.Format "2006 01 02" }}</div>
+    <div class="">
+        <a href="{{ .RelPermalink }}">
+            <img src="/images/{{ .Params.Image }}" />
+        </a>
     </div>
-    <div><p>{{ .Content }}</p></div>
+    <div class="spacer1"></div>
+    <div>{{ .Content }}</div>
     {{ if isset .Params "source" }}
-    <div><p>Source: {{ .Params.source | markdownify }}</p></div>
+    <div>Source: {{ .Params.source | markdownify }}</div>
     {{ end }}
-    <div><p>
+    <div>
         {{ $taxo := "authors" }}
         {{ with .Param $taxo }}
         By
@@ -19,8 +23,8 @@
         {{- end -}}
         {{- end -}}
         {{ end }}
-      </p></div>
-    <div><p>
+      </div>
+    <div>
       {{ $taxo := "tools" }}
       {{ with .Param $taxo }}
       Using
@@ -31,8 +35,7 @@
           {{- end -}}
       {{- end -}}
       {{ end }}
-      </p></div>
+      </div>
   </div>
 </div>
-<div class="spacer3"></div>
 <div class="spacer3"></div>

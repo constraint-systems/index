@@ -12,24 +12,21 @@
 
 {{ define "main" }}
 {{ partial "header" . }}
-<div class="measure auto p3">
-  <div>
-{{ "[Gallery](/gallery/)" | markdownify }}&nbsp; Post
-  </div>
-
-  <div class="spacer2"></div>
-  <div style="display: none;">Post  {{ $pages := (where .Site.RegularPages.ByDate.Reverse "Section" "gallery") }}
-    <span style="width: 5ch; display: inline-block; text-align: left;">
+<div class="px3 sans serif-link">
+  <ul class="nav-list">{{ $pages := (where .Site.RegularPages.ByDate.Reverse "Section" "gallery") }}
       {{with $pages.Next .}}
-      <a href="{{ .RelPermalink }}">Prev</a>
+      <li><a href="{{ .RelPermalink }}">Previous</a></li>
+      {{ else }}
+      <li class="serif">Previous</li>
       {{ end }}
-    </span>
     {{with $pages.Prev .}}
-    <a href="{{ .RelPermalink }}">Next</a> 
+      <li><a href="{{ .RelPermalink }}">Next</a></li> 
+      {{ else }}
+      <li class="serif">Next</li>
     {{ end }}
-  </div>
+  </ul>
 
-  <div>{{ .Date.Format "2006-01-02" }}</div>
+  <div style="display: none">{{ .Date.Format "2006-01-02" }}</div>
   <div class="spacer2"></div>
   <div>
     <div></div><img src="/images/{{ .Params.Image }}" />
@@ -64,14 +61,13 @@
       {{ end }}
     </p></div>
      <div class="spacer3"></div>
-      <div class="spacer2"></div>
       <div>Tool</div>
       <div class="spacer"></div>
       <div><p>
           {{ range .Param "tools" }}
           <div>
             {{ with $.Site.GetPage (printf "/tools_content/%s.md" (lower .) ) -}}
-              <div>{{ .Title }}</div>
+              <div class="serif">{{ .Title }}</div>
               <div>{{ .Content }}</div>
               <div><p>{{ .Params.link | markdownify }}</p></div>
             {{ end }}
@@ -79,6 +75,6 @@
           {{ end }}
         </p></div>
  
-{{ partial "footer" . }}
 </div>
+{{ partial "footer" . }}
 {{ end }}

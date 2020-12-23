@@ -12,32 +12,32 @@
 
 {{ define "main" }}
 {{ partial "header" . }}
-<div class="measure auto p3">
+<div class="px3 sans serif-link">
 <div>Filter posts by</div>
-<div><p>Tool: 
+<div>Tool: 
     {{ $tool_counter := 0 }}
     {{- range .Site.Taxonomies.tools.ByCount -}}
     {{- if gt $tool_counter 0 }}, {{ end -}}
     <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
     {{- $tool_counter = add $tool_counter 1 -}}
     {{- end -}}
-</p></div>
-<div><p>Author: 
+</div>
+<div>Author: 
     {{ $author_counter := 0 }}
     {{- range .Site.Taxonomies.authors.ByCount -}}
     {{- if gt $author_counter 0 }}, {{ end -}}
       <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
     {{- $author_counter = add $author_counter 1 -}}
     {{ end }}
-  </p></div>
+  </div>
 
-<div class="spacer3"></div>
-<div class="spacer2"></div>
+  <div class="spacer3" ></div>
  <div id="link-grid">
     {{ range where .Site.RegularPages "Section" "gallery" }}
       {{ partial "post_link" . }}
     {{ end }}
   </div>
-  {{ partial "footer" . }}
 </div>
+{{ partial "footer" . }}
 {{ end }}
+

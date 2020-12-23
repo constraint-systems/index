@@ -3,25 +3,25 @@ window.addEventListener('load', () => {
   let $preview_holder = document.querySelector('#preview-holder')
 
   let makePreview = (title, gif, description, url) => `
-    <div style="position: fixed; left: 0; top:0; right: 0; bottom: 0; background: rgba(20,20,20,0.825); padding: 16px; display: block; display: flex; flex-direction: column;">
-      <div style="text-align: center; margin-bottom: 6px;">
-        <div id="close-preview" class="button thumbnail-button button-preview" role="button">
-          Close
+    <div class="px2" style="position: fixed; left: 0; top:0; right: 0; bottom: 0; display: block; display: flex; flex-direction: column; background: white;">
+        <div class="py1 flex space-between" style="align-items: center">
+          <div style="font-size: 32px; line-height: 1.2;">
+            <strong>${title}</strong>
+          </div>
+          <div><button class="button-preview">Close preview</button></div>
         </div>
-      </div>
-      <div style="font-size: 26px; line-height: 26px; padding-bottom: 16px; text-align: center;"><strong>${title} Preview</strong></div>
-        <div style="flex-grow: 1; background-image: url(${gif}); background-size: contain; background-repeat: no-repeat; background-position: center center;"></div>
-      <div style="text-align: center; padding-bottom: 6px; padding-top: 16px;">${description}</div>
-      <div style="text-align: center; padding-bottom: 6px; padding-top: 0px;">
-    <a
-              href="${url}"
-              class="thumbnail-button button button-launch"
-              target="_blank"
-              >Launch</a
-            >
-
-      </div>
-      <div style="text-align: center;">&nbsp;</div>
+        <div class="spacer1"></div>
+        <div class="img background-contain pointer" style="flex-grow: 1; background-image: url(${gif}); background-position: center center;"></div>
+        <div class="spacer1"></div>
+       <div class="py1 flex space-between" style="align-items: center;">
+          <div class="sans measure mr2">
+              ${description}
+          </div>
+          <div
+ style="font-size: 32px; line-height: 1.2;"
+><a href="${url}" target="_blank">Launch</a></div>
+        </div>
+        <div class="spacer1"></div>
     </div>
   `
 

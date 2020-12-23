@@ -47,14 +47,16 @@ html {
   font-family: 'karrik-custom', sans-serif;
   font-size: 16px;
   line-height: 22px;
-  background: #222;
-  color: #ccc;
+  background: #111;
+  color: #eee;
 }
 strong {
   font-family: sans-serif;
   font-weight: 400;
   font-family: 'karrik-custom', sans-serif;
   color: white;
+  color: #eee;
+  color: inherit;
 }
 .button {
   font-family: inherit;
@@ -65,17 +67,37 @@ strong {
   cursor: pointer;
   color: white;
   color: #eee;
+  color: inherit;
 }
 .button:hover {
   background: rgba(0, 0, 0, 0.1);
 }
 
 .grid-item {
-  outline: solid 2px #666;
+  /* outline: solid 2px #666; */
   position: relative;
 }
 .grid-item {
-  /* background: #111; */
+    background: #111;
+    outline: solid 1px #eee;
+    color: #eee;
+}
+.pointer {
+    cursor: pointer;
+}
+.grid-item-title {
+}
+.background {
+    position: relative;
+}
+#footer-gradient {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    height: 16px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 /* Padding */
@@ -146,6 +168,9 @@ strong {
   width: 100%;
   height: var(--p3);
 }
+.relative {
+    position: relative;
+}
 
 .flex {
   display: flex;
@@ -182,6 +207,16 @@ strong {
   background-position: center center;
 }
 
+.wide-measure {
+   max-width: 132ch;
+}
+
 .measure {
   max-width: 64ch;
+}
+
+.info {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
 }

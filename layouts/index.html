@@ -1,85 +1,101 @@
 {{ define "head" }}
- {{ $title := "Constraint Systems" }}
-  {{ $description := "Alternative interfaces for editing and creating images and text." }}
-  <title>{{ $title }}</title>
-  <meta property="description" content="{{ $description }}" />
-  <meta property="og:title" content="{{ $title }}" />
-  <meta property="og:description" content="{{ $description }}" />
-  <meta property="og:image" content="{{ .Site.BaseURL }}images/cs-share.png" />
-  <meta property="og:url" content="{{ .Site.BaseURL }}" />
-  <meta property="twitter:card" content="summary_large_image" />
-  {{ with .OutputFormats.Get "rss" -}}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-  {{ end -}}
-  <script src="/tool-preview.js"></script>
+{{ $title := "Constraint Systems" }}
+{{ $description := "Alternative interfaces for editing and creating images and text." }}
+<title>{{ $title }}</title>
+<meta property="description" content="{{ $description }}" />
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $description }}" />
+<meta property="og:image" content="{{ .Site.BaseURL }}images/cs-share.png" />
+<meta property="og:url" content="{{ .Site.BaseURL }}" />
+<meta property="twitter:card" content="summary_large_image" />
+{{ with .OutputFormats.Get "rss" -}}
+{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+<script src="/tool-preview.js"></script>
 {{ end }}
 
 {{ define "main" }}
-  {{ $tools := where .Site.RegularPages "Section" "tools_content" }}
-  <div class="p3 auto center">
-    <div class="big-text mb2"><strong>Constraint Systems</strong></div>
-    <div>{{ len $tools }} alternative interfaces for creating and editing images and text.</div>
-  </div>
+{{ $tools := where .Site.RegularPages "Section" "tools_content" }}
 
-  <div
-   style="
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-      grid-auto-rows: 20rem;
-      padding: 1px;
-  ">
-    {{ range $tools }}
-      <div 
-        class="thumbnail"
-        style="padding: 1px; height: 20rem;"
-        data-title="{{ .Title }}"
-        data-gif="/images/tool_gifs/{{ .Params.gif }}"
-        data-url="{{ .Params.link }}"
-        data-description="{{ .Content }}"
-      >
-      <div class="grid-item p3 flex-column" style="height: 100%;">
-        <div class="big-text mb2 center"><strong>{{ .Title }}</strong></div>
-        <div class="spacer1"></div>
-        <div class="img background-contain pointer mb3" style="flex-grow: 1; background-image: url(/images/tool_imgs/{{ .Params.image }});"></div>
-        <div class="mb1">{{ .Content }}</div>
-        <div class="thumbnail-button-holder flex-between">
-          <div class="button thumbnail-button button-preview" role="button">
-            Preview
-          </div>
-          <a
-            href="{{ .Params.link }}"
-            class="thumbnail-button button button-launch"
-            target="_blank"
-            >Launch</a
-          >
+<div class="spacer3"></div>
+
+<div class="px3">
+    <div class="flex space-between">
+        <div class="flex">
+            <div class="mr2">
+                C<super>S</super>
+            </div>
+            <div><strong>Constraint Systems</strong></div>
         </div>
-     </div>
+        <ul class="nav-list">
+            <li>Index</li>
+            <li><a href="/gallery">Gallery</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="spacer3"></div>
+
+<div class="px3">
+    <div><strong>TOOLS</strong></div>
+    <div class="spacer2"></div>
+    <div class="sans">{{ len $tools }} alternative interfaces for creating and editing images and text</div>
+</div>
+
+<div class="spacer3"></div>
+
+<div class="grid-holder">
+    {{ range $tools }}
+    <div class="px3 py2 flex grid-item thumbnail"
+         data-title="{{ .Title }}"
+         data-gif="/images/tool_gifs/{{ .Params.gif }}"
+         data-url="{{ .Params.link }}"
+         data-description="{{ .Content }}"
+    >
+        <div class="py1" style="font-size: 32px; line-height: 1.2;">
+            <strong>{{ .Title }}</strong>
+        </div>
+        <div class="spacer1"></div>
+        <div class="img background-contain pointer" style="flex-grow: 1; background-image: url(/images/tool_imgs/{{ .Params.image }});"></div>
+        <div class="spacer1"></div>
+        <div class="py1 sans">
+            {{ .Content | plainify }}
+        </div>
+        <div class="py1">
+            <ul class="nav-list flex space-between">
+                <li><button class="button-preview">Preview</button></li>
+                <li><a href="{{ .Params.link }}" target="_blank">Launch</a></li>
+            </ul>
+        </div>
     </div>
     {{ end }}
-  </div>
+</div>
 
-  <div class="p3 measure auto">
+<div class="spacer3"></div>
+
+<div class="px3 measure">
+    <div><strong>ABOUT</strong></div>
     <div class="spacer2"></div>
-    <div class="big-text mb2"><strong>Gallery</strong></div>
-    <div class="">See work created using the Constraint Systems tools <a href="/gallery">in the Gallery</a>.</div>
+    <div class="sans">Constraint Systems is a collection of experimental web-based creative tools. They are an ongoing attempt to explore alternative ways of interacting with pixels and text on a computer screen. I hope to someday build these ideas into something larger, but the plan for now is to keep the scopes small and the releases quick.</div>
     <div class="spacer3"></div>
-    <div class="big-text mb2"><strong>About</strong></div>
-    <div class="mb2">Constraint Systems is a collection of experimental web-based creative tools. They are an ongoing attempt to explore alternative ways of interacting with pixels and text on a computer screen. I hope to someday build these ideas into something larger, but the plan for now is to keep the scopes small and the releases quick.</div>
-      <div>Questions? Interested in collaborating? Get in touch with <a href="https://grantcuster.com" target="_blank">Grant Custer</a>
-  </div>
+    <div class="sans">See work created using the Constraint Systems tools <a href="/gallery">in the Gallery</a>.</div>
+    <div class="spacer3"></div>
+    <div class="sans">Questions? Interested in collaborating? Get in touch with <a href="https://grantcuster.com" target="_blank">Grant Custer</a>
+    </div>
+</div>
 
-  <div class="spacer3"></div>
-  <div class="spacer2"></div>
+<div class="spacer3"></div>
 
-  <div class="center">
-    <a href="/gallery">Gallery</a>&nbsp;
-    <a href="https://github.com/constraint-systems" target="_blank">Github</a>&nbsp;
-    <a href="https://twitter.com/constraint_sys" target="_blank">Twitter</a>&nbsp;
-    <a href="https://youtube.com/grantcuster" target="_blank">Youtube</a>&nbsp;
-    <a href="https://constraint.systems/rss.xml" target="_blank">RSS</a>
-  </div>
+<div class="px3 measure">
+    <ul class="nav-list">
+        <li><a href="https://github.com/constraint-systems" target="_blank">Github</a></li>
+        <li><a href="https://twitter.com/constraint_sys" target="_blank">Twitter</a></li>
+        <li><a href="https://youtube.com/grantcuster" target="_blank">Youtube</a></li>
+        <li><a href="https://constraint.systems/rss.xml" target="_blank">RSS</a></li>
+    </ul>
+</div>
 
-  <div class="spacer2"></div>
+<div class="spacer3"></div>
 
-  <div id="preview-holder"></div>
+<div id="preview-holder"></div>
 {{ end }}

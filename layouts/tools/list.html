@@ -12,24 +12,19 @@
 
 {{ define "main" }}
 {{ partial "header" . }}
-<div class="measure auto p3">
-  <div class="container">
-    {{ "[Gallery](/gallery)" | markdownify }} Tool
-  </div>
-  <div class="spacer3"></div>
+<div class="px3 sans serif-link">
+ <div>Tool</div>
   {{ with .Site.GetPage (printf "/tools_content/%s.md" (lower .Name)) }} 
-        <div>{{ .Title }}</div>
-        <div>{{ .Content }}</div>
+        <div class="serif">{{ .Title }}</div>
+        <div class="measure">{{ .Content }}</div>
         <div><p>{{ .Params.link | markdownify }}</p></div>
   {{ end }}
   <div class="spacer3"></div>
-  <div class="spacer2"></div>
   <div id="link-grid">
     {{ range .Pages }}
     {{ partial "post_link" . }}
     {{ end }}
   </div>
-  <div class="spacer"></div>
-{{ partial "footer" . }}
 </div>
+{{ partial "footer" . }}
 {{ end }}
