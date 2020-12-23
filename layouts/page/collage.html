@@ -1,7 +1,8 @@
 {{ define "main" }}
   <div style="width: 1600px; height: 800px;">
-  {{ range $index, $element := .Site.RegularPages.ByDate }}
-    <img style="position: absolute; left: 0; top: 0; max-width: 400px; max-height: 400px;" src="{{ .Params.Image }}" />
+{{ $tools := where .Site.RegularPages "Section" "tools_content" }}
+      {{ range $tools }}
+    <img style="position: absolute; left: 0; top: 0; max-width: 400px; max-height: 400px;" src="/images/tool_imgs/{{ .Params.image }}" />
   {{ end }}
   </div>
 </div>
@@ -11,6 +12,7 @@
       for (let image of images) {
         image.style.left = Math.random() * (1600 - 400) + 'px'
         image.style.top = Math.random() * (800 - 400) + 'px'
+        image.style.zIndex = Math.ceil(Math.random() * 10)
       }
     })
   </script>

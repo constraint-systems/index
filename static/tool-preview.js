@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
           <div style="font-size: 32px; line-height: 1.2;">
             <strong>${title}</strong>
           </div>
-          <div><button class="button-preview">Close preview</button></div>
+          <div><button id="close-preview">Close preview</button></div>
         </div>
         <div class="spacer1"></div>
         <div class="img background-contain pointer" style="flex-grow: 1; background-image: url(${gif}); background-position: center center;"></div>
@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
               ${description}
           </div>
           <div
- style="font-size: 32px; line-height: 1.2;"
+ style="font-size: 32px; line-height: 1.2; flex-shrink: 0;"
 ><a href="${url}" target="_blank">Launch</a></div>
         </div>
         <div class="spacer1"></div>
@@ -44,7 +44,6 @@ window.addEventListener('load', () => {
     let $thumbnail = $thumbnails[i]
     let $preview_button = $thumbnail.querySelector('.button-preview')
     let $img = $thumbnail.querySelector('.img')
-    let $close_button = $thumbnail.querySelector('.button-close')
 
     let title = $thumbnail.getAttribute('data-title')
     let gif = $thumbnail.getAttribute('data-gif')
