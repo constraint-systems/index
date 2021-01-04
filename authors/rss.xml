@@ -6,10 +6,19 @@
     <description>Recent content in Authors on Constraint Systems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Sep 2020 11:59:24 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Jan 2021 20:12:48 +0000</lastBuildDate>
     
 	<atom:link href="https://constraint.systems/authors/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>joshavanier</title>
+      <link>https://constraint.systems/gallery/authors/joshavanier/</link>
+      <pubDate>Sun, 03 Jan 2021 20:12:48 +0000</pubDate>
+      
+      <guid>https://constraint.systems/gallery/authors/joshavanier/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Grant</title>
