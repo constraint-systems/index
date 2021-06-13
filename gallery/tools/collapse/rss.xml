@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Collapse on Constraint Systems</title>
+    <link>https://constraint.systems/gallery/tools/collapse/</link>
+    <description>Recent content in Collapse on Constraint Systems</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Jul 2020 21:21:02 +0000</lastBuildDate><atom:link href="https://constraint.systems/gallery/tools/collapse/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://constraint.systems/gallery/2020-07-02-212102/</link>
+      <pubDate>Thu, 02 Jul 2020 21:21:02 +0000</pubDate>
+      
+      <guid>https://constraint.systems/gallery/2020-07-02-212102/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://constraint.systems/gallery/2020-07-02-211956/</link>
+      <pubDate>Thu, 02 Jul 2020 21:19:56 +0000</pubDate>
+      
+      <guid>https://constraint.systems/gallery/2020-07-02-211956/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://constraint.systems/gallery/2020-07-02-211801/</link>
+      <pubDate>Thu, 02 Jul 2020 21:18:01 +0000</pubDate>
+      
+      <guid>https://constraint.systems/gallery/2020-07-02-211801/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
