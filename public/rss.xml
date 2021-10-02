@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Flow</title>
+      <title>Push</title>
       <link>https://push.constraint.systems</link>
       <pubDate>Mon, 27 Sep 2021 04:00:00 +0000</pubDate>
       
@@ -21,7 +21,7 @@
         <div>
           <a href="https://push.constraint.systems"><img style="display: block; max-width: 100%;" src="push.jpg"/></a>
         </div>
-        <div><a href="https://push.constraint.systems">Flow</a></div>
+        <div><a href="https://push.constraint.systems">Push</a></div>
         <p>Push and pull blocks to distort an image.</p>
 
       </description>
