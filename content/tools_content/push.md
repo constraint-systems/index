@@ -1,5 +1,5 @@
 ---
-title: Flow
+title: Push
 date: 2021-09-27T04:00:00.000Z
 link: 'https://push.constraint.systems'
 image: push.jpg
