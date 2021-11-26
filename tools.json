@@ -1,0 +1,190 @@
+{
+  
+  "tools": [
+     
+    {
+      "url": "https://collage.constraint.systems",
+      "title": "Collage",
+      "image": "/images/tool_imgs/collage.jpg",
+      "gif": "/images/tool_gifs/collage.gif",
+      "description": "An experimental public collage that combines images according to their complexity."
+   }
+   , 
+    {
+      "url": "https://type.constraint.systems",
+      "title": "Type",
+      "image": "/images/tool_imgs/type.png",
+      "gif": "/images/tool_gifs/type.gif",
+      "description": "A directed typing experiment. You choose the direction the letters should flow."
+   }
+   , 
+    {
+      "url": "https://push.constraint.systems",
+      "title": "Push",
+      "image": "/images/tool_imgs/push.jpg",
+      "gif": "/images/tool_gifs/push.gif",
+      "description": "Push and pull blocks to distort an image."
+   }
+   , 
+    {
+      "url": "https://flow.constraint.systems",
+      "title": "Flow",
+      "image": "/images/tool_imgs/flow.png",
+      "gif": "/images/tool_gifs/flow.gif",
+      "description": "An experimental image editor that lets you set and direct pixel-flows."
+   }
+   , 
+    {
+      "url": "https://fracture.constraint.systems",
+      "title": "Fracture",
+      "image": "/images/tool_imgs/fracture.png",
+      "gif": "/images/tool_gifs/fracture.gif",
+      "description": "Shatter and recombine images using a grid of viewports."
+   }
+   , 
+    {
+      "url": "https://tri.constraint.systems",
+      "title": "Tri",
+      "image": "/images/tool_imgs/tri.png",
+      "gif": "/images/tool_gifs/tri.gif",
+      "description": "Tri is an experimental image distorter. You can choose an image to render using a WebGL quad, adjust the texture and position coordinates to create different distortions, and save the result."
+   }
+   , 
+    {
+      "url": "https://tile.constraint.systems",
+      "title": "Tile",
+      "image": "/images/tool_imgs/tile.png",
+      "gif": "/images/tool_gifs/tile.gif",
+      "description": "Layout images using a tiling tree layout. Move, split, and resize images using keyboard controls."
+   }
+   , 
+    {
+      "url": "https://sift.constraint.systems",
+      "title": "Sift",
+      "image": "/images/tool_imgs/sift.png",
+      "gif": "/images/tool_gifs/sift.gif",
+      "description": "Slice an image into multiple layers. You can offset the slices to create interference patterns and pseudo-3D effects."
+   }
+   , 
+    {
+      "url": "https://automadraw.constraint.systems",
+      "title": "Automadraw",
+      "image": "/images/tool_imgs/automadraw.png",
+      "gif": "/images/tool_gifs/automadraw.gif",
+      "description": "Draw and evolve your drawing using cellular automata on a pixel grid with two keyboard-controlled cursors."
+   }
+   , 
+    {
+      "url": "https://span.constraint.systems",
+      "title": "Span",
+      "image": "/images/tool_imgs/span.png",
+      "gif": "/images/tool_gifs/span.gif",
+      "description": "Lay out and rearrange text, line by line, using keyboard controls."
+   }
+   , 
+    {
+      "url": "https://stamp.constraint.systems",
+      "title": "Stamp",
+      "image": "/images/tool_imgs/stamp.png",
+      "gif": "/images/tool_gifs/stamp.gif",
+      "description": "Image-paint from a source image palette using keyboard controls."
+   }
+   , 
+    {
+      "url": "https://collapse.constraint.systems",
+      "title": "Collapse",
+      "image": "/images/tool_imgs/collapse.png",
+      "gif": "/images/tool_gifs/collapse.gif",
+      "description": "Collapse an image into itself using ranked superpixels."
+   }
+   , 
+    {
+      "url": "https://res.constraint.systems",
+      "title": "Res",
+      "image": "/images/tool_imgs/res.png",
+      "gif": "/images/tool_gifs/res.gif",
+      "description": "Selectively pixelate an image using a compression algorithm."
+   }
+   , 
+    {
+      "url": "https://rgb.constraint.systems",
+      "title": "Rgb",
+      "image": "/images/tool_imgs/rgb.png",
+      "gif": "/images/tool_gifs/rgb.gif",
+      "description": "Pixel-paint using keyboard controls."
+   }
+   , 
+    {
+      "url": "https://face.constraint.systems",
+      "title": "Face",
+      "image": "/images/tool_imgs/face.png",
+      "gif": "/images/tool_gifs/facelong.gif",
+      "description": "Edit both the text and the font it is rendered in."
+   }
+   , 
+    {
+      "url": "https://pal.constraint.systems",
+      "title": "Pal",
+      "image": "/images/tool_imgs/pal.png",
+      "gif": "/images/tool_gifs/pal.gif",
+      "description": "Apply an eight-color terminal color scheme to an image. Use the keyboard controls to choose a theme, set thresholds, and cycle hues."
+   }
+   , 
+    {
+      "url": "https://bix.constraint.systems",
+      "title": "Bix",
+      "image": "/images/tool_imgs/bix.png",
+      "gif": "/images/tool_gifs/bix.gif",
+      "description": "Draw on binary to glitch text."
+   }
+   , 
+    {
+      "url": "https://diptych.constraint.systems",
+      "title": "Diptych",
+      "image": "/images/tool_imgs/diptych.png",
+      "gif": "/images/tool_gifs/diptych.gif",
+      "description": "Pixel-reflow an image to match the dimensions of your text. Save the result as a diptych."
+   }
+   , 
+    {
+      "url": "https://slide.constraint.systems",
+      "title": "Slide",
+      "image": "/images/tool_imgs/slide.png",
+      "gif": "/images/tool_gifs/slide.gif",
+      "description": "Divide and slide-stretch an image using keyboard controls."
+   }
+   , 
+    {
+      "url": "https://freeconfig.constraint.systems",
+      "title": "Freeconfig",
+      "image": "/images/tool_imgs/freeconfig.png",
+      "gif": "/images/tool_gifs/freeconfig.gif",
+      "description": "Push around image pixels in blocks."
+   }
+   , 
+    {
+      "url": "https://moire.constraint.systems",
+      "title": "Moire",
+      "image": "/images/tool_imgs/moire.png",
+      "gif": "/images/tool_gifs/moire.gif",
+      "description": "Generate angular skyscapes using Asteroids-like ship controls."
+   }
+   , 
+    {
+      "url": "https://hex.constraint.systems",
+      "title": "Hex",
+      "image": "/images/tool_imgs/hex.png",
+      "gif": "/images/tool_gifs/hex.gif",
+      "description": "A keyboard-driven, grid-based drawing tool."
+   }
+   , 
+    {
+      "url": "https://etch.constraint.systems",
+      "title": "Etch",
+      "image": "/images/tool_imgs/etch.png",
+      "gif": "/images/tool_gifs/etch.gif",
+      "description": "A keyboard-based pixel drawing tool."
+   }
+   
+  ]
+}
