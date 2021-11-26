@@ -6,10 +6,42 @@
     <description>Alternative interfaces for editing and creating images and text.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Sep 2021 04:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Nov 2021 04:00:00 +0000</lastBuildDate>
     
     <atom:link href="https://constraint.systems/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Collage</title>
+      <link>https://collage.constraint.systems</link>
+      <pubDate>Sat, 20 Nov 2021 04:00:00 +0000</pubDate>
+      
+      <guid>https://constraint.systems/tools_content/collage/</guid>
+      <description>
+        <div>
+          <a href="https://collage.constraint.systems"><img style="display: block; max-width: 100%;" src="collage.jpg"/></a>
+        </div>
+        <div><a href="https://collage.constraint.systems">Collage</a></div>
+        <p>An experimental public collage that combines images according to their complexity.</p>
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Type</title>
+      <link>https://type.constraint.systems</link>
+      <pubDate>Sun, 07 Nov 2021 04:00:00 +0000</pubDate>
+      
+      <guid>https://constraint.systems/tools_content/type/</guid>
+      <description>
+        <div>
+          <a href="https://type.constraint.systems"><img style="display: block; max-width: 100%;" src="type.png"/></a>
+        </div>
+        <div><a href="https://type.constraint.systems">Type</a></div>
+        <p>A directed typing experiment. You choose the direction the letters should flow.</p>
+
+      </description>
+    </item>
     
     <item>
       <title>Push</title>

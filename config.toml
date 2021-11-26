@@ -14,3 +14,10 @@ title = "Constraint Systems"
 [outputFormats.RSS]
   mediatype = "application/rss"
   baseName = "rss"
+[outputFormats.jsonfeed]
+  mediatype = "application/json"
+  baseName = "tools"
+  isPlainText = true
+
+[outputs]
+  home = ["HTML", "RSS", "jsonfeed"]
