@@ -6,7 +6,7 @@
     <description>Alternative interfaces for editing and creating images and text.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Dec 2021 04:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Dec 2021 04:00:00 +0000</lastBuildDate>
     
     <atom:link href="https://constraint.systems/rss.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>csOS</title>
       <link>https://csOS.constraint.systems</link>
-      <pubDate>Wed, 01 Dec 2021 04:00:00 +0000</pubDate>
+      <pubDate>Sat, 18 Dec 2021 04:00:00 +0000</pubDate>
       
       <guid>https://constraint.systems/tools_content/csos/</guid>
       <description>
