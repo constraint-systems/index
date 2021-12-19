@@ -6,10 +6,42 @@
     <description>Alternative interfaces for editing and creating images and text.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Nov 2021 04:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Dec 2021 04:00:00 +0000</lastBuildDate>
     
     <atom:link href="https://constraint.systems/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>csOS</title>
+      <link>https://csOS.constraint.systems</link>
+      <pubDate>Wed, 01 Dec 2021 04:00:00 +0000</pubDate>
+      
+      <guid>https://constraint.systems/tools_content/csos/</guid>
+      <description>
+        <div>
+          <a href="https://csOS.constraint.systems"><img style="display: block; max-width: 100%;" src="csOS.jpg"/></a>
+        </div>
+        <div><a href="https://csOS.constraint.systems">csOS</a></div>
+        <p>Use the Constraint Systems collection of experimental creative tools all together in one place.</p>
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Mosaic</title>
+      <link>https://mosaic.constraint.systems</link>
+      <pubDate>Wed, 01 Dec 2021 04:00:00 +0000</pubDate>
+      
+      <guid>https://constraint.systems/tools_content/mosaic/</guid>
+      <description>
+        <div>
+          <a href="https://mosaic.constraint.systems"><img style="display: block; max-width: 100%;" src="mosaic.jpg"/></a>
+        </div>
+        <div><a href="https://mosaic.constraint.systems">Mosaic</a></div>
+        <p>Recreate one image using the tiles from another image.</p>
+
+      </description>
+    </item>
     
     <item>
       <title>Collage</title>
