@@ -3,6 +3,22 @@
   "tools": [
      
     {
+      "url": "https://csOS.constraint.systems",
+      "title": "csOS",
+      "image": "/images/tool_imgs/csOS.jpg",
+      "gif": "/images/tool_gifs/csOS.gif",
+      "description": "Use the Constraint Systems collection of experimental creative tools all together in one place."
+   }
+   , 
+    {
+      "url": "https://mosaic.constraint.systems",
+      "title": "Mosaic",
+      "image": "/images/tool_imgs/mosaic.jpg",
+      "gif": "/images/tool_gifs/mosaic.gif",
+      "description": "Recreate one image using the tiles from another image."
+   }
+   , 
+    {
       "url": "https://collage.constraint.systems",
       "title": "Collage",
       "image": "/images/tool_imgs/collage.jpg",

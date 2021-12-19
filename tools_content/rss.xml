@@ -6,7 +6,25 @@
     <description>Recent content in Tools_contents on Constraint Systems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Nov 2021 04:00:00 +0000</lastBuildDate><atom:link href="https://constraint.systems/tools_content/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Dec 2021 04:00:00 +0000</lastBuildDate><atom:link href="https://constraint.systems/tools_content/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>csOS</title>
+      <link>https://constraint.systems/tools_content/csos/</link>
+      <pubDate>Wed, 01 Dec 2021 04:00:00 +0000</pubDate>
+      
+      <guid>https://constraint.systems/tools_content/csos/</guid>
+      <description>Use the Constraint Systems collection of experimental creative tools all together in one place.</description>
+    </item>
+    
+    <item>
+      <title>Mosaic</title>
+      <link>https://constraint.systems/tools_content/mosaic/</link>
+      <pubDate>Wed, 01 Dec 2021 04:00:00 +0000</pubDate>
+      
+      <guid>https://constraint.systems/tools_content/mosaic/</guid>
+      <description>Recreate one image using the tiles from another image.</description>
+    </item>
+    
     <item>
       <title>Collage</title>
       <link>https://constraint.systems/tools_content/collage/</link>

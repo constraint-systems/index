@@ -3,17 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://constraint.systems/tools_content/collage/</loc>
-    <lastmod>2021-11-20T04:00:00+00:00</lastmod>
+    <loc>https://constraint.systems/</loc>
+    <lastmod>2021-12-01T04:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://constraint.systems/</loc>
-    <lastmod>2021-11-20T04:00:00+00:00</lastmod>
+    <loc>https://constraint.systems/tools_content/csos/</loc>
+    <lastmod>2021-12-01T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://constraint.systems/tools_content/mosaic/</loc>
+    <lastmod>2021-12-01T04:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://constraint.systems/tools_content/</loc>
+    <lastmod>2021-12-01T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://constraint.systems/tools_content/collage/</loc>
     <lastmod>2021-11-20T04:00:00+00:00</lastmod>
   </url>
   
