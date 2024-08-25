@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tools on Constraint Systems</title>
-    <link>https://constraint.systems/tools/</link>
+    <link>http://localhost:1313/tools/</link>
     <description>Recent content in Tools on Constraint Systems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Jan 2021 20:12:48 +0000</lastBuildDate>
-    <atom:link href="https://constraint.systems/tools/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tools/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hex</title>
-      <link>https://constraint.systems/gallery/tools/hex/</link>
+      <link>http://localhost:1313/gallery/tools/hex/</link>
       <pubDate>Sun, 03 Jan 2021 20:12:48 +0000</pubDate>
-      <guid>https://constraint.systems/gallery/tools/hex/</guid>
+      <guid>http://localhost:1313/gallery/tools/hex/</guid>
       <description></description>
     </item>
     <item>
       <title>Sift</title>
-      <link>https://constraint.systems/gallery/tools/sift/</link>
+      <link>http://localhost:1313/gallery/tools/sift/</link>
       <pubDate>Wed, 02 Sep 2020 11:59:24 +0000</pubDate>
-      <guid>https://constraint.systems/gallery/tools/sift/</guid>
+      <guid>http://localhost:1313/gallery/tools/sift/</guid>
       <description></description>
     </item>
     <item>
       <title>Stamp</title>
-      <link>https://constraint.systems/gallery/tools/stamp/</link>
+      <link>http://localhost:1313/gallery/tools/stamp/</link>
       <pubDate>Sat, 04 Jul 2020 15:09:07 +0000</pubDate>
-      <guid>https://constraint.systems/gallery/tools/stamp/</guid>
+      <guid>http://localhost:1313/gallery/tools/stamp/</guid>
       <description></description>
     </item>
     <item>
       <title>Span</title>
-      <link>https://constraint.systems/gallery/tools/span/</link>
+      <link>http://localhost:1313/gallery/tools/span/</link>
       <pubDate>Sat, 04 Jul 2020 12:24:49 +0000</pubDate>
-      <guid>https://constraint.systems/gallery/tools/span/</guid>
+      <guid>http://localhost:1313/gallery/tools/span/</guid>
       <description></description>
     </item>
     <item>
       <title>Pal</title>
-      <link>https://constraint.systems/gallery/tools/pal/</link>
+      <link>http://localhost:1313/gallery/tools/pal/</link>
       <pubDate>Sat, 04 Jul 2020 10:24:49 +0000</pubDate>
-      <guid>https://constraint.systems/gallery/tools/pal/</guid>
+      <guid>http://localhost:1313/gallery/tools/pal/</guid>
       <description></description>
     </item>
     <item>
       <title>Slide</title>
-      <link>https://constraint.systems/gallery/tools/slide/</link>
+      <link>http://localhost:1313/gallery/tools/slide/</link>
       <pubDate>Thu, 02 Jul 2020 21:23:06 +0000</pubDate>
-      <guid>https://constraint.systems/gallery/tools/slide/</guid>
+      <guid>http://localhost:1313/gallery/tools/slide/</guid>
       <description></description>
     </item>
     <item>
       <title>Res</title>
-      <link>https://constraint.systems/gallery/tools/res/</link>
+      <link>http://localhost:1313/gallery/tools/res/</link>
       <pubDate>Thu, 02 Jul 2020 21:22:51 +0000</pubDate>
-      <guid>https://constraint.systems/gallery/tools/res/</guid>
+      <guid>http://localhost:1313/gallery/tools/res/</guid>
       <description></description>
     </item>
     <item>
       <title>Moire</title>
-      <link>https://constraint.systems/gallery/tools/moire/</link>
+      <link>http://localhost:1313/gallery/tools/moire/</link>
       <pubDate>Thu, 02 Jul 2020 21:22:12 +0000</pubDate>
-      <guid>https://constraint.systems/gallery/tools/moire/</guid>
+      <guid>http://localhost:1313/gallery/tools/moire/</guid>
       <description></description>
     </item>
     <item>
       <title>Collapse</title>
-      <link>https://constraint.systems/gallery/tools/collapse/</link>
+      <link>http://localhost:1313/gallery/tools/collapse/</link>
       <pubDate>Thu, 02 Jul 2020 21:21:02 +0000</pubDate>
-      <guid>https://constraint.systems/gallery/tools/collapse/</guid>
+      <guid>http://localhost:1313/gallery/tools/collapse/</guid>
       <description></description>
     </item>
     <item>
       <title>Freeconfig</title>
-      <link>https://constraint.systems/gallery/tools/freeconfig/</link>
+      <link>http://localhost:1313/gallery/tools/freeconfig/</link>
       <pubDate>Thu, 02 Jul 2020 21:20:16 +0000</pubDate>
-      <guid>https://constraint.systems/gallery/tools/freeconfig/</guid>
+      <guid>http://localhost:1313/gallery/tools/freeconfig/</guid>
       <description></description>
     </item>
     <item>
       <title>Bix</title>
-      <link>https://constraint.systems/gallery/tools/bix/</link>
+      <link>http://localhost:1313/gallery/tools/bix/</link>
       <pubDate>Thu, 02 Jul 2020 21:18:54 +0000</pubDate>
-      <guid>https://constraint.systems/gallery/tools/bix/</guid>
+      <guid>http://localhost:1313/gallery/tools/bix/</guid>
       <description></description>
     </item>
     <item>
       <title>Face</title>
-      <link>https://constraint.systems/gallery/tools/face/</link>
+      <link>http://localhost:1313/gallery/tools/face/</link>
       <pubDate>Thu, 02 Jul 2020 21:18:19 +0000</pubDate>
-      <guid>https://constraint.systems/gallery/tools/face/</guid>
+      <guid>http://localhost:1313/gallery/tools/face/</guid>
       <description></description>
     </item>
   </channel>
