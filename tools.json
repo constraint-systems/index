@@ -3,6 +3,14 @@
   "tools": [
      
     {
+      "url": "https://grain.constraint.systems",
+      "title": "Grain",
+      "image": "/images/tool_imgs/grain.png",
+      "gif": "/images/tool_gifs/grain.gif",
+      "description": "Progressively pixelate an image."
+   }
+   , 
+    {
       "url": "https://conservation.constraint.systems",
       "title": "Conservation",
       "image": "/images/tool_imgs/conservation.png",

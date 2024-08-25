@@ -6,10 +6,26 @@
     <description>Alternative interfaces for editing and creating images and text.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jan 2024 04:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Aug 2024 04:00:00 +0000</lastBuildDate>
     
     <atom:link href="https://constraint.systems/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Grain</title>
+      <link>https://grain.constraint.systems</link>
+      <pubDate>Sun, 25 Aug 2024 04:00:00 +0000</pubDate>
+      
+      <guid>https://constraint.systems/tools_content/grain/</guid>
+      <description>
+        <div>
+          <a href="https://grain.constraint.systems"><img style="display: block; max-width: 100%;" src="grain.png"/></a>
+        </div>
+        <div><a href="https://grain.constraint.systems">Grain</a></div>
+        <p>Progressively pixelate an image.</p>
+
+      </description>
+    </item>
     
     <item>
       <title>Conservation</title>
