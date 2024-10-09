@@ -6,10 +6,26 @@
     <description>Alternative interfaces for editing and creating images and text.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Aug 2024 04:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Oct 2024 04:00:00 +0000</lastBuildDate>
     
     <atom:link href="https://constraint.systems/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Masks</title>
+      <link>https://masks.constraint.systems</link>
+      <pubDate>Wed, 09 Oct 2024 04:00:00 +0000</pubDate>
+      
+      <guid>https://constraint.systems/tools_content/masks/</guid>
+      <description>
+        <div>
+          <a href="https://masks.constraint.systems"><img style="display: block; max-width: 100%;" src="mask.png"/></a>
+        </div>
+        <div><a href="https://masks.constraint.systems">Masks</a></div>
+        <p>Collage faces using your webcam.</p>
+
+      </description>
+    </item>
     
     <item>
       <title>Grain</title>
