@@ -2,21 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Constraint Systems</title>
-    <link>http://localhost:1313/</link>
+    <link>https://constraint.systems/</link>
     <description>Alternative interfaces for editing and creating images and text.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Aug 2024 04:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Oct 2024 04:00:00 +0000</lastBuildDate>
     
-    <atom:link href="http://localhost:1313/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://constraint.systems/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Masks</title>
+      <link>https://masks.constraint.systems</link>
+      <pubDate>Wed, 09 Oct 2024 04:00:00 +0000</pubDate>
+      
+      <guid>https://constraint.systems/tools_content/masks/</guid>
+      <description>
+        <div>
+          <a href="https://masks.constraint.systems"><img style="display: block; max-width: 100%;" src="mask.png"/></a>
+        </div>
+        <div><a href="https://masks.constraint.systems">Masks</a></div>
+        <p>Collage faces using your webcam.</p>
+
+      </description>
+    </item>
     
     <item>
       <title>Grain</title>
       <link>https://grain.constraint.systems</link>
       <pubDate>Sun, 25 Aug 2024 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/grain/</guid>
+      <guid>https://constraint.systems/tools_content/grain/</guid>
       <description>
         <div>
           <a href="https://grain.constraint.systems"><img style="display: block; max-width: 100%;" src="grain.png"/></a>
@@ -32,7 +48,7 @@
       <link>https://conservation.constraint.systems</link>
       <pubDate>Sun, 28 Jan 2024 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/conservation/</guid>
+      <guid>https://constraint.systems/tools_content/conservation/</guid>
       <description>
         <div>
           <a href="https://conservation.constraint.systems"><img style="display: block; max-width: 100%;" src="conservation.png"/></a>
@@ -48,7 +64,7 @@
       <link>https://css-paint.constraint.systems</link>
       <pubDate>Wed, 31 Aug 2022 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/css-paint/</guid>
+      <guid>https://constraint.systems/tools_content/css-paint/</guid>
       <description>
         <div>
           <a href="https://css-paint.constraint.systems"><img style="display: block; max-width: 100%;" src="css-paint.png"/></a>
@@ -64,7 +80,7 @@
       <link>https://nest.constraint.systems</link>
       <pubDate>Wed, 29 Jun 2022 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/nest/</guid>
+      <guid>https://constraint.systems/tools_content/nest/</guid>
       <description>
         <div>
           <a href="https://nest.constraint.systems"><img style="display: block; max-width: 100%;" src="nest.png"/></a>
@@ -80,7 +96,7 @@
       <link>https://grid.constraint.systems</link>
       <pubDate>Sat, 26 Mar 2022 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/grid/</guid>
+      <guid>https://constraint.systems/tools_content/grid/</guid>
       <description>
         <div>
           <a href="https://grid.constraint.systems"><img style="display: block; max-width: 100%;" src="grid-wide.png"/></a>
@@ -96,7 +112,7 @@
       <link>https://cascade.constraint.systems</link>
       <pubDate>Sun, 16 Jan 2022 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/cascade/</guid>
+      <guid>https://constraint.systems/tools_content/cascade/</guid>
       <description>
         <div>
           <a href="https://cascade.constraint.systems"><img style="display: block; max-width: 100%;" src="cascade.jpg"/></a>
@@ -112,7 +128,7 @@
       <link>https://csOS.constraint.systems</link>
       <pubDate>Sat, 18 Dec 2021 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/csos/</guid>
+      <guid>https://constraint.systems/tools_content/csos/</guid>
       <description>
         <div>
           <a href="https://csOS.constraint.systems"><img style="display: block; max-width: 100%;" src="csOS.jpg"/></a>
@@ -128,7 +144,7 @@
       <link>https://mosaic.constraint.systems</link>
       <pubDate>Wed, 01 Dec 2021 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/mosaic/</guid>
+      <guid>https://constraint.systems/tools_content/mosaic/</guid>
       <description>
         <div>
           <a href="https://mosaic.constraint.systems"><img style="display: block; max-width: 100%;" src="mosaic.jpg"/></a>
@@ -144,7 +160,7 @@
       <link>https://collage.constraint.systems</link>
       <pubDate>Sat, 20 Nov 2021 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/collage/</guid>
+      <guid>https://constraint.systems/tools_content/collage/</guid>
       <description>
         <div>
           <a href="https://collage.constraint.systems"><img style="display: block; max-width: 100%;" src="collage.jpg"/></a>
@@ -160,7 +176,7 @@
       <link>https://type.constraint.systems</link>
       <pubDate>Sun, 07 Nov 2021 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/type/</guid>
+      <guid>https://constraint.systems/tools_content/type/</guid>
       <description>
         <div>
           <a href="https://type.constraint.systems"><img style="display: block; max-width: 100%;" src="type.png"/></a>
@@ -176,7 +192,7 @@
       <link>https://push.constraint.systems</link>
       <pubDate>Mon, 27 Sep 2021 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/push/</guid>
+      <guid>https://constraint.systems/tools_content/push/</guid>
       <description>
         <div>
           <a href="https://push.constraint.systems"><img style="display: block; max-width: 100%;" src="push.jpg"/></a>
@@ -192,7 +208,7 @@
       <link>https://flow.constraint.systems</link>
       <pubDate>Sun, 13 Jun 2021 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/flow/</guid>
+      <guid>https://constraint.systems/tools_content/flow/</guid>
       <description>
         <div>
           <a href="https://flow.constraint.systems"><img style="display: block; max-width: 100%;" src="flow.png"/></a>
@@ -208,7 +224,7 @@
       <link>https://fracture.constraint.systems</link>
       <pubDate>Thu, 14 Jan 2021 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/fracture/</guid>
+      <guid>https://constraint.systems/tools_content/fracture/</guid>
       <description>
         <div>
           <a href="https://fracture.constraint.systems"><img style="display: block; max-width: 100%;" src="fracture.png"/></a>
@@ -224,7 +240,7 @@
       <link>https://tri.constraint.systems</link>
       <pubDate>Mon, 05 Oct 2020 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/tri/</guid>
+      <guid>https://constraint.systems/tools_content/tri/</guid>
       <description>
         <div>
           <a href="https://tri.constraint.systems"><img style="display: block; max-width: 100%;" src="tri.png"/></a>
@@ -240,7 +256,7 @@
       <link>https://tile.constraint.systems</link>
       <pubDate>Tue, 15 Sep 2020 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/tile/</guid>
+      <guid>https://constraint.systems/tools_content/tile/</guid>
       <description>
         <div>
           <a href="https://tile.constraint.systems"><img style="display: block; max-width: 100%;" src="tile.png"/></a>
@@ -256,7 +272,7 @@
       <link>https://sift.constraint.systems</link>
       <pubDate>Tue, 01 Sep 2020 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/sift/</guid>
+      <guid>https://constraint.systems/tools_content/sift/</guid>
       <description>
         <div>
           <a href="https://sift.constraint.systems"><img style="display: block; max-width: 100%;" src="sift.png"/></a>
@@ -272,7 +288,7 @@
       <link>https://automadraw.constraint.systems</link>
       <pubDate>Thu, 30 Jul 2020 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/automadraw/</guid>
+      <guid>https://constraint.systems/tools_content/automadraw/</guid>
       <description>
         <div>
           <a href="https://automadraw.constraint.systems"><img style="display: block; max-width: 100%;" src="automadraw.png"/></a>
@@ -288,7 +304,7 @@
       <link>https://span.constraint.systems</link>
       <pubDate>Wed, 17 Jun 2020 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/span/</guid>
+      <guid>https://constraint.systems/tools_content/span/</guid>
       <description>
         <div>
           <a href="https://span.constraint.systems"><img style="display: block; max-width: 100%;" src="span.png"/></a>
@@ -304,7 +320,7 @@
       <link>https://stamp.constraint.systems</link>
       <pubDate>Thu, 23 Apr 2020 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/stamp/</guid>
+      <guid>https://constraint.systems/tools_content/stamp/</guid>
       <description>
         <div>
           <a href="https://stamp.constraint.systems"><img style="display: block; max-width: 100%;" src="stamp.png"/></a>
@@ -320,7 +336,7 @@
       <link>https://collapse.constraint.systems</link>
       <pubDate>Sat, 21 Mar 2020 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/collapse/</guid>
+      <guid>https://constraint.systems/tools_content/collapse/</guid>
       <description>
         <div>
           <a href="https://collapse.constraint.systems"><img style="display: block; max-width: 100%;" src="collapse.png"/></a>
@@ -336,7 +352,7 @@
       <link>https://res.constraint.systems</link>
       <pubDate>Mon, 16 Mar 2020 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/res/</guid>
+      <guid>https://constraint.systems/tools_content/res/</guid>
       <description>
         <div>
           <a href="https://res.constraint.systems"><img style="display: block; max-width: 100%;" src="res.png"/></a>
@@ -352,7 +368,7 @@
       <link>https://rgb.constraint.systems</link>
       <pubDate>Sun, 08 Mar 2020 05:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/rgb/</guid>
+      <guid>https://constraint.systems/tools_content/rgb/</guid>
       <description>
         <div>
           <a href="https://rgb.constraint.systems"><img style="display: block; max-width: 100%;" src="rgb.png"/></a>
@@ -368,7 +384,7 @@
       <link>https://face.constraint.systems</link>
       <pubDate>Sun, 23 Feb 2020 05:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/face/</guid>
+      <guid>https://constraint.systems/tools_content/face/</guid>
       <description>
         <div>
           <a href="https://face.constraint.systems"><img style="display: block; max-width: 100%;" src="face.png"/></a>
@@ -384,7 +400,7 @@
       <link>https://pal.constraint.systems</link>
       <pubDate>Wed, 08 Jan 2020 05:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/pal/</guid>
+      <guid>https://constraint.systems/tools_content/pal/</guid>
       <description>
         <div>
           <a href="https://pal.constraint.systems"><img style="display: block; max-width: 100%;" src="pal.png"/></a>
@@ -400,7 +416,7 @@
       <link>https://bix.constraint.systems</link>
       <pubDate>Sat, 28 Dec 2019 05:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/bix/</guid>
+      <guid>https://constraint.systems/tools_content/bix/</guid>
       <description>
         <div>
           <a href="https://bix.constraint.systems"><img style="display: block; max-width: 100%;" src="bix.png"/></a>
@@ -416,7 +432,7 @@
       <link>https://diptych.constraint.systems</link>
       <pubDate>Fri, 08 Nov 2019 05:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/diptych/</guid>
+      <guid>https://constraint.systems/tools_content/diptych/</guid>
       <description>
         <div>
           <a href="https://diptych.constraint.systems"><img style="display: block; max-width: 100%;" src="diptych.png"/></a>
@@ -432,7 +448,7 @@
       <link>https://slide.constraint.systems</link>
       <pubDate>Tue, 29 Oct 2019 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/slide/</guid>
+      <guid>https://constraint.systems/tools_content/slide/</guid>
       <description>
         <div>
           <a href="https://slide.constraint.systems"><img style="display: block; max-width: 100%;" src="slide.png"/></a>
@@ -448,7 +464,7 @@
       <link>https://freeconfig.constraint.systems</link>
       <pubDate>Tue, 08 Oct 2019 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/freeconfig/</guid>
+      <guid>https://constraint.systems/tools_content/freeconfig/</guid>
       <description>
         <div>
           <a href="https://freeconfig.constraint.systems"><img style="display: block; max-width: 100%;" src="freeconfig.png"/></a>
@@ -464,7 +480,7 @@
       <link>https://moire.constraint.systems</link>
       <pubDate>Fri, 04 Oct 2019 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/moire/</guid>
+      <guid>https://constraint.systems/tools_content/moire/</guid>
       <description>
         <div>
           <a href="https://moire.constraint.systems"><img style="display: block; max-width: 100%;" src="moire.png"/></a>
@@ -480,7 +496,7 @@
       <link>https://hex.constraint.systems</link>
       <pubDate>Wed, 25 Sep 2019 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/hex/</guid>
+      <guid>https://constraint.systems/tools_content/hex/</guid>
       <description>
         <div>
           <a href="https://hex.constraint.systems"><img style="display: block; max-width: 100%;" src="hex.png"/></a>
@@ -496,7 +512,7 @@
       <link>https://etch.constraint.systems</link>
       <pubDate>Thu, 19 Sep 2019 04:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools_content/etch/</guid>
+      <guid>https://constraint.systems/tools_content/etch/</guid>
       <description>
         <div>
           <a href="https://etch.constraint.systems"><img style="display: block; max-width: 100%;" src="etch.png"/></a>

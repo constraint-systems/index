@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>joshavanier on Constraint Systems</title>
-    <link>http://localhost:1313/gallery/authors/joshavanier/</link>
+    <link>https://constraint.systems/gallery/authors/joshavanier/</link>
     <description>Recent content in joshavanier on Constraint Systems</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Jan 2021 20:12:48 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/gallery/authors/joshavanier/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://constraint.systems/gallery/authors/joshavanier/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/gallery/2021-01-03-201248/</link>
+      <link>https://constraint.systems/gallery/2021-01-03-201248/</link>
       <pubDate>Sun, 03 Jan 2021 20:12:48 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/2021-01-03-201248/</guid>
+      <guid>https://constraint.systems/gallery/2021-01-03-201248/</guid>
       <description></description>
     </item>
   </channel>

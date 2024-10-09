@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sift on Constraint Systems</title>
-    <link>http://localhost:1313/gallery/tools/sift/</link>
+    <link>https://constraint.systems/gallery/tools/sift/</link>
     <description>Recent content in Sift on Constraint Systems</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 02 Sep 2020 11:59:24 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/gallery/tools/sift/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://constraint.systems/gallery/tools/sift/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/gallery/2020-09-02-115924/</link>
+      <link>https://constraint.systems/gallery/2020-09-02-115924/</link>
       <pubDate>Wed, 02 Sep 2020 11:59:24 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/2020-09-02-115924/</guid>
+      <guid>https://constraint.systems/gallery/2020-09-02-115924/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/gallery/2020-09-02-115814/</link>
+      <link>https://constraint.systems/gallery/2020-09-02-115814/</link>
       <pubDate>Wed, 02 Sep 2020 11:58:14 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/2020-09-02-115814/</guid>
+      <guid>https://constraint.systems/gallery/2020-09-02-115814/</guid>
       <description></description>
     </item>
   </channel>

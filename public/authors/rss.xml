@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Constraint Systems</title>
-    <link>http://localhost:1313/authors/</link>
+    <link>https://constraint.systems/authors/</link>
     <description>Recent content in Authors on Constraint Systems</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Jan 2021 20:12:48 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/authors/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://constraint.systems/authors/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>joshavanier</title>
-      <link>http://localhost:1313/gallery/authors/joshavanier/</link>
+      <link>https://constraint.systems/gallery/authors/joshavanier/</link>
       <pubDate>Sun, 03 Jan 2021 20:12:48 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/authors/joshavanier/</guid>
+      <guid>https://constraint.systems/gallery/authors/joshavanier/</guid>
       <description></description>
     </item>
     <item>
       <title>Grant</title>
-      <link>http://localhost:1313/gallery/authors/grant/</link>
+      <link>https://constraint.systems/gallery/authors/grant/</link>
       <pubDate>Wed, 02 Sep 2020 11:59:24 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/authors/grant/</guid>
+      <guid>https://constraint.systems/gallery/authors/grant/</guid>
       <description></description>
     </item>
     <item>
       <title>lossless</title>
-      <link>http://localhost:1313/gallery/authors/lossless/</link>
+      <link>https://constraint.systems/gallery/authors/lossless/</link>
       <pubDate>Sat, 04 Jul 2020 15:09:07 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/authors/lossless/</guid>
+      <guid>https://constraint.systems/gallery/authors/lossless/</guid>
       <description></description>
     </item>
     <item>
       <title>Carella</title>
-      <link>http://localhost:1313/gallery/authors/carella/</link>
+      <link>https://constraint.systems/gallery/authors/carella/</link>
       <pubDate>Sat, 04 Jul 2020 10:24:49 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/authors/carella/</guid>
+      <guid>https://constraint.systems/gallery/authors/carella/</guid>
       <description></description>
     </item>
   </channel>
