@@ -1,6 +1,0 @@
-#!/bin/bash
-
-for url in https://sift.constraint.systems/sift.gif https://automadraw.constraint.systems/automadraw.gif https://span.constraint.systems/span.gif https://stamp.constraint.systems/public/stamp.gif https://collapse.constraint.systems/collapse.gif https://res.constraint.systems/res.gif https://rgb.constraint.systems/rgb.gif https://face.constraint.systems/facelong.gif https://pal.constraint.systems/pal.gif https://bix.constraint.systems/bix.gif https://diptych.constraint.systems/diptych.gif https://slide.constraint.systems/slide.gif https://freeconfig.constraint.systems/static/freeconfig.gif https://moire.constraint.systems/static/moire.gif https://hex.constraint.systems/static/share.gif https://etch.constraint.systems/static/share.gif 
-do
-  curl -O $url 
-done
