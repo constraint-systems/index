@@ -1,5 +1,14 @@
 [
     {
+    "title": "Ghost",
+    "date": "2025-07-23T04:00:00.000Z",
+    "link": "https://ghost.constraint.systems",
+    "image": "ghost.png",
+    "gif": "ghost.gif",
+    "description": "Capture the difference between two moments in time."
+  },
+ 
+    {
     "title": "Image Paint",
     "date": "2025-06-24T04:00:00.000Z",
     "link": "https://image-paint.constraint.systems",
