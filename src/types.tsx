@@ -3,6 +3,7 @@ export type ToolType = {
   date: string;
   link: string;
   image: string;
-  gif: string;
+  gif?: string;
+  video?: string;
   description: string;
 }

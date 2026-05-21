@@ -82,7 +82,7 @@ function ToolBox({ tool, index }: { tool: ToolType; index: number }) {
   const [, setSelectedTool] = useAtom(selectedToolAtom);
   const [isVisible, setIsVisible] = useState(false);
 
-  const containerRef = useRef<HTMLImageElement | null>(null);
+  const containerRef = useRef<HTMLButtonElement | null>(null);
   useEffect(() => {
     const container = containerRef.current;
     const observer = new IntersectionObserver(
@@ -125,19 +125,16 @@ function ToolBox({ tool, index }: { tool: ToolType; index: number }) {
         <div className="blue">{tool.date.split("-")[0]}</div>
       </div>
       <button
+        ref={containerRef}
         className="grow relative"
         onClick={() => {
           setSelectedTool(tool);
         }}
       >
-        <img
-          ref={containerRef}
-          className="absolute cursor-zoom-in inset-0 object-contain w-full h-full"
-          src={
-            displayType === "gif" && isVisible
-              ? `images/${tool.gif}`
-              : `images/${tool.image}`
-          }
+        <ToolMedia
+          tool={tool}
+          showMovingPreview={displayType === "gif" && isVisible}
+          cursorClassName="cursor-zoom-in"
         />
       </button>
       <div className="flex flex-col">
@@ -178,9 +175,10 @@ function Preview() {
           </button>
         </div>
         <button className="grow relative" onClick={() => setSelectedTool(tool)}>
-          <img
-            className="absolute inset-0 cursor-zoom-out object-contain w-full h-full"
-            src={`images/${tool.gif}`}
+          <ToolMedia
+            tool={tool}
+            showMovingPreview
+            cursorClassName="cursor-zoom-out"
           />
         </button>
         <div className="flex items-center">
@@ -199,4 +197,53 @@ function Preview() {
       </div>
     )
   );
+}
+
+const videoExtensions = [".mp4", ".webm", ".mov", ".m4v"];
+
+function ToolMedia({
+  tool,
+  showMovingPreview,
+  cursorClassName,
+}: {
+  tool: ToolType;
+  showMovingPreview: boolean;
+  cursorClassName: string;
+}) {
+  const className = `absolute inset-0 ${cursorClassName} object-contain w-full h-full`;
+  const movingPreview = tool.video ?? tool.gif;
+  const stillImagePath = `images/${tool.image}`;
+
+  if (showMovingPreview && movingPreview && isVideoAsset(movingPreview)) {
+    return (
+      <video
+        autoPlay
+        className={className}
+        loop
+        muted
+        playsInline
+        poster={stillImagePath}
+        preload="metadata"
+        src={`images/${movingPreview}`}
+      />
+    );
+  }
+
+  return (
+    <img
+      alt={tool.title}
+      className={className}
+      src={
+        showMovingPreview && movingPreview
+          ? `images/${movingPreview}`
+          : stillImagePath
+      }
+    />
+  );
+}
+
+function isVideoAsset(asset: string) {
+  const normalizedAsset = asset.toLowerCase().split(/[?#]/)[0];
+
+  return videoExtensions.some((extension) => normalizedAsset.endsWith(extension));
 }

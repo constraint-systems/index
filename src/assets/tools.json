@@ -1,5 +1,21 @@
 [
-    {
+  {
+    "title": "Sphere Paint",
+    "date": "2026-05-21T04:00:00.000Z",
+    "link": "https://sphere-paint.constraint.systems",
+    "image": "sphere-paint.jpg",
+    "gif": "sphere-paint.mp4",
+    "description": "Collaboratively paint a sphere. All marks are public and permanent (until they're drawn over)."
+  },
+  {
+    "title": "Cosine",
+    "date": "2025-11-14T04:00:00.000Z",
+    "link": "https://cosine.constraint.systems",
+    "image": "cosine.png",
+    "gif": "cosine.gif",
+    "description": "Embed and hash any text and see its nearest neighbors."
+  },
+  {
     "title": "Ghost",
     "date": "2025-07-23T04:00:00.000Z",
     "link": "https://ghost.constraint.systems",
@@ -7,8 +23,7 @@
     "gif": "ghost.gif",
     "description": "Capture the difference between two moments in time."
   },
- 
-    {
+  {
     "title": "Image Paint",
     "date": "2025-06-24T04:00:00.000Z",
     "link": "https://image-paint.constraint.systems",
